@@ -155,10 +155,10 @@
 </div>
           </div>
           <div class="col-lg-3">
-                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+                    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
 
                     <div id="id02" class="modal">
-                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
                       <form class="modal-content" action="/action_page.php">
                         <div class="container">
                           <h1>Sign Up</h1>
@@ -180,7 +180,7 @@
                           <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
                           <div class="clearfix">
-                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
                             <button type="submit" class="signupbtn">Sign Up</button>
                           </div>
                         </div>
@@ -209,7 +209,40 @@
                     </div>
 
                     <div class="row">
-                      <div class="col-lg-12">Contact</div>
+                      <div class="col-lg-2"></div>
+                      <div class="col-lg-8">CONTACT US
+                        <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-6" id="contactForm">
+                              <!--<label for="inputEmail4">Email</label>-->
+                              <input type="text" class="form-control" name="firstName" placeholder="FIRST NAME">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <!--<label for="inputPassword4">Password</label>-->
+                              <input type="text" class="form-control" name="lastName" placeholder="LAST NAME">
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <!--<label for="inputEmail4">Email</label>-->
+                                <input type="email" class="form-control" name="email" placeholder="EMAIL">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <!--<label for="inputEmail4">Email</label>-->
+                                <input type="text" class="form-control" name="subject" placeholder="SUBJECT">
+                              </div>
+
+                            </div>
+                            <div class="form-group">
+                              <!--<label for="exampleFormControlTextarea1">Example textarea</label>-->
+                              <textarea class="form-control" name="textArea" placeholder="YOUR MESSAGE" rows="5"></textarea>
+                              <div class="col-auto">
+                                <button type="submit" onclick=onclick="javascript:alert(document.getElementById(‘contactForm’).innerHTML);" class="btn btn-primary mb-2">SEND MESSAGE</button>
+                            </div>
+                          </form>
+
+
+                      </div>
+                      <div class="col-lg-2"></div>
                     </div>
 
                 </div>
@@ -226,6 +259,29 @@
 
 
     </div>
+    <!--<script>
+
+      function mydisplay()
+      {
+      var a=document.details.firstName.value;
+      var b=document.details.lastName.value;
+      var c=document.details.email.value;
+      var d=document.details.subject.value;
+      var e=document.details.textArea.value;
+
+      alert("FIRST NAME:"+a+"     "+"LAST NAME:"+b+"     "+"EMAIL:"+c+"SUBJECT"+d+"YOUR MESSAGE"+e);
+      }
+    </script>-->
+    <!--cookies-->
+    <script type="text/javascript" id="cookieinfo"
+	src="//cookieinfoscript.com/js/cookieinfo.min.js"
+	data-bg="#645862"
+	data-fg="#FFFFFF"
+	data-link="#F1D600"
+	data-cookie="CookieInfoScript"
+	data-text-align="left"
+       data-close-text="Got it!">
+</script>
 
   </body>
 </html>
