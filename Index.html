@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="Style.css">
     <title>Alléciné</title>
   </head>
@@ -28,13 +31,22 @@
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
-                  <img src="images/background id/Image_4.jpg" alt="Los Angeles" style="width:100%;">
+                  <img src="images/inception-2010-scifi.jpg" alt="Inception" style="width:100%;">
+                    <div class="carousel-caption">
+                      <h1>Inception</h1>
+                    </div>
                 </div>
                 <div class="item">
-                  <img src="images/background id/Image_3.jpg" alt="Chicago" style="width:100%;">
+                  <img src="images/intouchables-2011-comedie.jpg" alt="Intouchables" style="width:100%;">
+                    <div class="carousel-caption">
+                      <h1>Intouchable</h1>
+                    </div>
                 </div>
                 <div class="item">
-                  <img src="images/background id/Image_1.jpg" alt="New york" style="width:100%;">
+                  <img src="images/seven-1995-thriller.jpg" alt="Seven" style="width:100%;">
+                    <div class="carousel-caption">
+                      <h1>Seven</h1>
+                    </div>
                 </div>
               </div>
               <!-- Left and right controls -->
@@ -52,146 +64,465 @@
 
     </header>
 
-    <section class="container-fluid">
+    <section class="container">
 
       <div class="row">
-        <div class="col-lg-12">Button</div>
+        <div class="col-lg-12">BOUTON</div>
       </div>
 
           <div class="row">
-              <div class="col-lg-2">2 colonnes</div>
 
-                <div class="col-lg-8">
+            <!--  <div class="col-lg-2">2 colonnes -->
+
+                <ul id="menu">
+                  <li><a href="https://twitter.com/?lang=fr" class="fa fa-twitter"></a></li>
+                  <li><a href="https://fr-fr.facebook.com/" class="fa fa-facebook"></a></li>
+                  <li><a href="https://dribbble.com/" class="fa fa-dribbble"></a></li>
+                  <li><a href="https://plus.google.com/?hl=fr" class="fa fa-google"></a></li>
+                </ul>
+
+              </div>
+
+                <div class="col-lg-12">
 
                     <section class="row">
-                      <div class="col-lg-3"><img src="images/batmanmovie-2017-comedie.jpg"  class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><br>
-                        <p>Batman Movie<br>2017<br>Comédie</p>
+                      <div class="col-xs-3 col-sm-3 col-md-3"><img src="images/batmanmovie-2017-comedie.jpg"  class="cadre" data-toggle="modal" data-target="#exampleModal"><br>
+                          <p>Batman</p>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <p>2017</p>
+                            </div>
+                            <div class="col-sm-6">
+                              <p>Comédie</p>
+                            </div>
+                          </div>
                       </div>
-                      <div class="col-lg-3"><img src="images/thefall-2006-dramatique.jpg" class="btn btn-primary" data-toggle="modal" data-target="#example2Modal"><br>
-                        <p>The Fall<br>2006<br>dramatique</p>
+
+                      <div class="col-xs-3 col-sm-3 col-md-3"><img src="images/thefall-2006-dramatique.jpg" class="cadre" data-toggle="modal" data-target="#example2Modal"><br>
+
+                        <p>The Fall</p>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <p>2006</p>
+                          </div>
+                          <div class="col-sm-6">
+                            <p>Dramatique</p>
+                          </div>
+                        </div>
+
                       </div>
-                      <div class="col-lg-3"><img src="images/lesdeuxtours-2002-aventure.jpg" class="btn btn-primary" data-toggle="modal" data-target="#example3Modal"><br>
-                        <p>Les deux tours<br>2002<br>aventure</p>
+                      <div class="col-xs-3 col-sm-3 col-md-3"><img src="images/lesdeuxtours-2002-aventure.jpg" class="cadre" data-toggle="modal" data-target="#example3Modal"><br>
+
+                        <p>Les deux tours</p>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <p>2002</p>
+                          </div>
+                          <div class="col-sm-6">
+                            <p>Aventure</p>
+                          </div>
+                        </div>
+
                       </div>
-                      <div class="col-lg-3"><img src="images/shutterisland-2010-thriller.jpg" class="btn btn-primary" data-toggle="modal" data-target="#example4Modal">
-                        <p>Shutter Island<br>2010<br>thriller</p>
+                      <div class="col-xs-3 col-sm-3 col-md-3"><img src="images/shutterisland-2010-thriller.jpg" class="cadre" data-toggle="modal" data-target="#example4Modal">
+
+                        <p>Shutter Island</p>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <p>2010</p>
+                          </div>
+                          <div class="col-sm-6">
+                            <p>Thriller</p>
+                          </div>
+                        </div>
+
                       </div>
                     </section>
 
+                    <div class="row">
+                      <div class="col-lg-12">
 
+                        <section class="row">
+                          <div class="col-lg-12"><h2>Featured Movie</h2></div>
+                        </section>
 
-
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Batman Movie</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
+                        <section class="row">
+                          <div class="col-lg-12">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-primary">All</button>
+                              <button type="button" class="btn btn-primary">Action</button>
+                              <button type="button" class="btn btn-primary">Policier</button>
+                            </div>
                           </div>
-                          <div class="modal-body">
-                            <iframe width="554" height="280" src="https://www.youtube.com/embed/9mznUFqFy74?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <p>Parvenant toujours à sauver Gotham City des attaques des super-vilains,
-                              Batman est devenu arrogant pour mieux cacher sa profonde solitude.
-                              Vexé, le Joker se laisse enfermer à l’asile d'Arkham. Mais Batman comme Barbara Gordon,
-                               la nouvelle commissaire de la ville, soupçonnent un plan caché. Réaliser par Chris Mckhay,
-                               sortie en 2017. Animation, Will Arnet, Michael Cera</p>
+                        </section>
+
+                        <section class="row">
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/thefall-2006-dramatique.jpg" alt="Tigre"><br>
+                              <p>The Fall</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>2006</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Dramatique</p>
+                                </div>
+                              </div>
+
                           </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/hostel-2005-thriller.jpg" alt="Tigre">
+                              <p>Hostel</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>2005</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Thriller</p>
+                                </div>
+                              </div>
+
                           </div>
-                        </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/inception-2010-scifi.jpg" alt="Tigre">
+                              <p>Inception</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>2010</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Scifi</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/intouchables-2011-comedie.jpg" alt="Tigre">
+                              <p>Intouchable</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>2011</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Comédie</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/lepatientanglais-1996-dramatique.jpg" alt="Tigre">
+                              <p>Le patient anglais</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>1996</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Dramatique</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/lesdeuxtours-2002-aventure.jpg" alt="Tigre">
+                              <p>Les deux tours</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>2002</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Aventure</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/seven-1995-thriller.jpg" alt="Tigre">
+                              <p>Seven</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>1995</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Thriller</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/starwarsempire-1980-scifi.jpg" alt="Tigre">
+                              <p>Star War Empire</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>1980</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>scifi</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/Survivestyle5-2004-comedie.jpg" alt="Tigre">
+                              <p>Survivestyle 5</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>2004</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Comédie</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/swissarmyman-2016-comedie.jpg" alt="Tigre">
+                              <p>Swissarmyman</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>2016</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Comédie</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/WhatWeDoInTheShadows-2014-comedie.jpg" alt="Tigre">
+                              <p>The Shadows</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>2014</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Comédie</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/zoolander-2001-comedie.jpg" alt="Tigre">
+                              <p>Zoolander</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>2001</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Comédie</p>
+                                </div>
+                              </div>
+
+                          </div>
+                        </section>
+
+                        <section class="row">
+                          <div class="col-lg-12">
+                            <button id="Bouton">Plus de film</button>
+                            <div id="tonDiv">
+
+
+
+                              <section class="row">
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/thefall-2006-dramatique.jpg" alt="Tigre"><br>
+                                    <p>The Fall</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>2006</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Dramatique</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/hostel-2005-thriller.jpg" alt="Tigre">
+                                    <p>Hostel</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>2005</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Thriller</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/inception-2010-scifi.jpg" alt="Tigre">
+                                    <p>Inception</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>2010</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Scifi</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/intouchables-2011-comedie.jpg" alt="Tigre">
+                                    <p>Intouchable</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>2011</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Comédie</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/lepatientanglais-1996-dramatique.jpg" alt="Tigre">
+                                    <p>Le patient anglais</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>1996</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Dramatique</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/lesdeuxtours-2002-aventure.jpg" alt="Tigre">
+                                    <p>Les deux tours</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>2002</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Aventure</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/seven-1995-thriller.jpg" alt="Tigre">
+                                    <p>Seven</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>1995</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Thriller</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/starwarsempire-1980-scifi.jpg" alt="Tigre">
+                                    <p>Star War Empire</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>1980</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>scifi</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/Survivestyle5-2004-comedie.jpg" alt="Tigre">
+                                    <p>Survivestyle 5</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>2004</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Comédie</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/swissarmyman-2016-comedie.jpg" alt="Tigre">
+                                    <p>Swissarmyman</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>2016</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Comédie</p>
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/WhatWeDoInTheShadows-2014-comedie.jpg" alt="Tigre">
+                                    <p>The Shadows</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>2014</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Comédie</p>
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/zoolander-2001-comedie.jpg" alt="Tigre">
+                                    <p>Zoolander</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>2001</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Comédie</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                              </section>
+
+
+
+                            </div>
+                            <script>
+                            document.querySelector("#Bouton").onclick = function() {
+                            if (window.getComputedStyle(document.querySelector('#tonDiv')).display=='none'){
+                            document.querySelector("#tonDiv").style.display="block";
+                            } else {
+                            document.querySelector("#tonDiv").style.display="none";
+                            }
+                            }
+                            </script>
+                          </div>
+                        </section>
+
                       </div>
                     </div>
 
+                    <section class="row">
+                      <div class="col-lg-12"><h2>Shop movies</h2></div>
+                    </section>
 
-                    <div class="modal fade" id="example2Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="example2ModalLabel">The Fall</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <iframe width="554" height="280" src="https://www.youtube.com/embed/IwsYyRc9j4g?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <p>Dans les années 1920, dans un hôpital à Los Angeles,
-                              une petite fille prénommée Alexandria qui s'est cassé le bras se lie d'amitié avec le cascadeur Roy Walker qui s'est blessé lors du tournage d'un film.
-                              Roy raconte alors une histoire fabuleuse à Alexandria, dont les personnages sont inspirés par les gens de l'entourage :
-                              une infirmière, un autre patient, lui-même… Réalisé par Tarsem Singh. Sorti en 2006. Genre dramatique.
-                              Lee Pace, Catinca Untaru, et Justine Waddell</p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          </div>
+                    <section class="row">
+                      <div class="col-lg-12">
+
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-primary"><</button>
+                          <button type="button" class="btn btn-primary">></button>
+
                         </div>
+
                       </div>
-                    </div>
-
-
-                    <div class="modal fade" id="example3Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="example2ModalLabel">Les deux tours</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <iframe width="554" height="280" src="https://www.youtube.com/embed/c9blKqmyeV4?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <p>Après la mort de Boromir et la disparition de Gandalf,
-                              la `Communauté' s'est scindée en trois. Perdus dans les collines d'`Emyn Muil',
-                              Frodon et Sam découvrent qu'ils sont suivis par Gollum, une créature versatile corrompue par l'anneau magique.
-                              Gollum promet de conduire les `Hobbits' jusqu'à la `Porte Noire' du `Mordor'. A travers la `Terre du Milieu',
-                              Aragorn, Legolas et Gimli font route vers le `Rohan', le royaume assiégé de Theoden.
-                              Réalisé par Peter Jackson. Sorti en 2002. Genre fantastique. Elijah Wood, Sean Astin, Viggo Mortensen, Ian McKellen, Andy Serkis</p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                    <div class="modal fade" id="example4Modal" tabindex="-1" role="dialog" aria-labelledby="example4ModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="example2ModalLabel">Shutter Island</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <iframe width="554" height="280" src="https://www.youtube.com/embed/Hz0ToXuAxag?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <p>L'invraisemblable évasion d'une meurtrière rusée amène le marshal Teddy Daniels et son nouveau partenaire à l'hôpital Ashecliffe,
-                              un asile psychiatrique situé sur une île lointaine et balayée par les vents.
-                              Il apparaît que la femme a disparu d'une chambre fermée à clef et il y a des indices d'actes effroyables commis au sein de l'hôpital.
-                              Alors que l'enquête piétine, Teddy réalise qu'il doit faire face à ses propres démons s'il veut quitter l'île en vie.
-                             Réalisé par 	Martin Scorsese. sortit en 	2010. Genre	Thriller psychologique.	Leonardo DiCaprio, Mark Ruffalo, Ben Kingsley </p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-
+                    </section>
 
                     <div class="row">
-                      <div class="col-lg-12">Featured movies</div>
-                    </div>
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-8">
 
-                    <div class="row">
-                      <div class="col-lg-12">Shop movies</div>
+                            <section class="row">
+                                <div class="col-xs-6 col-sm-3 col-md-3"><img src="images/thefall-2006-dramatique.jpg" alt="Tigre"></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><img src="images/hostel-2005-thriller.jpg" alt="Tigre"></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><img src="images/inception-2010-scifi.jpg" alt="Tigre"></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><img src="images/intouchables-2011-comedie.jpg" alt="Tigre"></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><img src="images/lepatientanglais-1996-dramatique.jpg" alt="Tigre"></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><img src="images/lesdeuxtours-2002-aventure.jpg" alt="Tigre"></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><img src="images/seven-1995-thriller.jpg" alt="Tigre"></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><img src="images/starwarsempire-1980-scifi.jpg" alt="Tigre"></div>
+                            </section>
+
+                          </div>
+                          <div class="col-lg-4">4 colonnes</div>
+                        </div>
+                      </div>
                     </div>
 
                     <div class="row">
@@ -200,7 +531,7 @@
 
                 </div>
 
-              <div class="col-lg-2">2 colonnes</div>
+              <!--<div class="col-lg-2">2 colonnes</div> -->
 
           </div>
     </section>
@@ -210,6 +541,104 @@
             <div class="col-lg-12">Footer</div>
           </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Batman Movie</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe width="554" height="280" src="https://www.youtube.com/embed/9mznUFqFy74?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p>Parvenant toujours à sauver Gotham City des attaques des super-vilains,
+              Batman est devenu arrogant pour mieux cacher sa profonde solitude.
+              Vexé, le Joker se laisse enfermer à l’asile d'Arkham. Mais Batman comme Barbara Gordon,
+               la nouvelle commissaire de la ville, soupçonnent un plan caché. Réaliser par Chris Mckhay,
+               sortie en 2017. Animation, Will Arnet, Michael Cera</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="example2Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="example2ModalLabel">The Fall</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe width="554" height="280" src="https://www.youtube.com/embed/IwsYyRc9j4g?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p>Dans les années 1920, dans un hôpital à Los Angeles,
+              une petite fille prénommée Alexandria qui s'est cassé le bras se lie d'amitié avec le cascadeur Roy Walker qui s'est blessé lors du tournage d'un film.
+              Roy raconte alors une histoire fabuleuse à Alexandria, dont les personnages sont inspirés par les gens de l'entourage :
+              une infirmière, un autre patient, lui-même… Réalisé par Tarsem Singh. Sorti en 2006. Genre dramatique.
+              Lee Pace, Catinca Untaru, et Justine Waddell</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="example3Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="example2ModalLabel">Les deux tours</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe width="554" height="280" src="https://www.youtube.com/embed/c9blKqmyeV4?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p>Après la mort de Boromir et la disparition de Gandalf,
+              la `Communauté' s'est scindée en trois. Perdus dans les collines d'`Emyn Muil',
+              Frodon et Sam découvrent qu'ils sont suivis par Gollum, une créature versatile corrompue par l'anneau magique.
+              Gollum promet de conduire les `Hobbits' jusqu'à la `Porte Noire' du `Mordor'. A travers la `Terre du Milieu',
+              Aragorn, Legolas et Gimli font route vers le `Rohan', le royaume assiégé de Theoden.
+              Réalisé par Peter Jackson. Sorti en 2002. Genre fantastique. Elijah Wood, Sean Astin, Viggo Mortensen, Ian McKellen, Andy Serkis</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="example4Modal" tabindex="-1" role="dialog" aria-labelledby="example4ModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="example2ModalLabel">Shutter Island</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe width="554" height="280" src="https://www.youtube.com/embed/Hz0ToXuAxag?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p>L'invraisemblable évasion d'une meurtrière rusée amène le marshal Teddy Daniels et son nouveau partenaire à l'hôpital Ashecliffe,
+              un asile psychiatrique situé sur une île lointaine et balayée par les vents.
+              Il apparaît que la femme a disparu d'une chambre fermée à clef et il y a des indices d'actes effroyables commis au sein de l'hôpital.
+              Alors que l'enquête piétine, Teddy réalise qu'il doit faire face à ses propres démons s'il veut quitter l'île en vie.
+             Réalisé par 	Martin Scorsese. sortit en 	2010. Genre	Thriller psychologique.	Leonardo DiCaprio, Mark Ruffalo, Ben Kingsley </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
