@@ -1,0 +1,388 @@
+/*RESET CSS*/
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+html, body {
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: white;
+  background-size: auto; }
+
+h1, h2, h3, .form-control, .btn, .my-nav {
+  text-transform: uppercase;
+}
+
+.title h2 {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+h5 {font-size: 18px !important;}
+
+/* menu */
+
+#top nav {
+position: absolute;
+width: 100%;
+z-index: 20;
+}
+
+.icon, .big {
+  padding: 0;
+  font-size: 2.5em;
+}
+
+#collapsibleNavbar li:not(:first-child) a{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+#collapsibleNavbar li a{
+  font-size: 0.7em;
+}
+
+.red {
+  color: rgb(253, 67, 63);
+  font-weight: bold;
+}
+
+.redback {
+  background-color: rgb(253, 67, 63);
+  line-height: 0;
+  height: 30px;
+}
+.logbut{
+  padding-top: 4px;
+}
+
+.numero{
+  padding-left: 30px;
+  color: white;
+  font-size: 10px;
+  padding-right: 20px;
+  padding-top: 12px;
+
+}
+.fa-phone{
+  transform: rotateY(180deg);
+  font-size: 8px;
+}
+
+.btn-black {
+  background-color: black;
+  color: white;
+  height: 22px;
+  font-size: 12px;
+  font-variant-caps: all-small-caps;
+}
+
+.round-like {
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #e0e0e0;
+  height: 25px;
+}
+
+.posright {
+  position: absolute;
+  right: 0px;
+}
+* Jumbo */
+
+.text-pos {
+  top: 150px;
+  z-index: 500;
+  width: 100%;
+  height: auto;
+  color: white;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-indicators .active {
+  background-color: rgb(253, 67, 63);
+}
+.carousel-indicators li{
+  background-color: white;
+}
+.carousel-inner{
+  background-color: black;
+}
+.im1, .im2, .im3/*, .im4 */{
+
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  filter: opacity(40%);
+}
+.im1 {
+  background-image: url(images/intouchables-2011-comedie.jpg);
+}
+.im2 {
+  background-image: url(images/thewitch-2015.jpg);
+}
+.im3 {
+  background-image: url(images/inception-2010-scifi.jpg);
+}
+/*.im4 {
+  background-image: url(images/thewitch-2015.jpg);
+}*/
+
+/*Main-movies */
+.infomovie h5 {text-align: center}
+
+.infomovie .left {
+  display: inline;
+  float:left;
+}
+.infomovie .right {
+  display: inline-block;
+  float:right;
+}
+
+.main-movies {
+	margin-top: 25px;
+  margin-bottom: 25px;
+  justify-content: center;
+  display: flex;
+}
+
+#firstmovie {
+  margin-left: 100px;
+  margin-right: 45px;
+}
+
+.col-md-2-5{
+position: relative;
+min-height: 1px;
+padding-right: 15px;
+padding-left: 15px;
+}
+
+.card-deck {
+	border: 0.5px solid lightgrey;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.card-title {
+	font-size: 12px;
+	text-align: center;
+}
+
+.card-left {
+	font-size: 11px;
+	text-align: left;
+	position: absolute;
+}
+
+.card-right {
+	font-size: 11px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.btn-group {
+  margin-left: 113px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.btnplus {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#collapseMore, #collapseMoreTv {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.featured-Tvshows {margin-top: 20px;}
+
+/*Social Media*/
+.fl-fl {
+  position: fixed;
+  border-radius: 0 25px 25px 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 190px;
+  left: -160px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+.fab {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin-right: 12px;
+}
+.fl-fl:hover {
+  left: 0;
+}
+.fl-fl a {
+  color: #fff !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px!important;
+  vertical-align: top!important;
+}
+.float-tw {
+  top: 180px;
+  background-color:#16abf8;
+}
+.float-fb {
+  top: 235px;
+  background-color: #3f5e94;
+}
+.float-ig {
+  top: 290px;
+  background: #ff346d;
+}
+.float-gp {
+  top: 345px;
+  background-color:#da4b34;
+}
+/*Shop movies*/
+.shopmovies-container {
+  margin-top: 20px;
+}
+
+.mainrow {
+  margin-left: 35px !important;
+  margin-right: 35px !important;
+}
+
+.shopinfo h5 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.shopinfo .left {
+  display: inline;
+  float:left;
+}
+.shopinfo .right {
+  display: inline-block;
+  float:right;
+  color: red;
+}
+
+.card-trailer p {color: #FB4446;}
+
+.card-trailer em {
+  color: white;
+  font-size: 12px;
+}
+
+.small-arrows {
+  position: absolute;
+  float: right;
+  margin-top: -50px;
+}
+
+/*Form*/
+.full-form {
+  position: relative;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: -100px;
+  background-color: white;
+  z-index: 10;
+  padding-bottom: 25px;
+  align-content: center;
+  padding-left: 5px;
+  padding-right: 12px;
+}
+
+.form-control {
+  margin: 5px;
+}
+
+.form-message {
+  height: 100px;
+}
+
+#sendmsg {margin-left: 5px}
+
+* UP button */
+
+.upbutton {
+  color: rgb(253, 67, 63);
+  font-size: 38px;
+}
+
+.upstyle{
+ left: auto;
+}
+
+.white, .flex-container div, ol li {
+  color: white;
+}
+
+/* Footer */
+
+.footer-dark {
+ background-color: black;
+ width: 100%;
+ height: auto;
+}
+
+ol li{
+ list-style-type: none;
+}
+
+.flex-container {
+ flex-wrap: wrap;
+}
+
+hr {
+ background: white;
+}
+/*Media queries*/
+@media screen and (max-width: 800px){
+  .full-form , .subscribe {
+    margin: 10px;
+    width: 95%;
+  }
+
+  .main-movies {
+    margin: 40px;
+    width: 95%;
+  }
+
+  .btn-group {margin-left: 37px}
+
+  .mainrow .row
+  { padding-left: 60px;}
+
+  footer {padding: 10px}
+  footer .row {
+    display: none;
+  }
+
+  .subscribe {
+    padding-top: 10px;
+  }
+}
