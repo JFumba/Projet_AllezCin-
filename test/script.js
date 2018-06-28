@@ -1,11 +1,11 @@
 // animated scroll
 
-$(document).on('click', 'a[href^="#"]', function (event) {
+/*$(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
-});
+});*/
 
 // Pop-Up age
 
@@ -28,7 +28,7 @@ $(document).ready(function(){
 
   //modal login and register code
 
-  let toggle = (select) => {
+  /*let toggle = (select) => {
     $(select).modal("toggle");
   }
 
@@ -72,7 +72,7 @@ $(document).ready(function(){
   $("#contactForm").submit(function(e){
     e.preventDefault();
     alert($("#email2").val() + '\n' + $("#message").val())
-  });
+  });*/
 
   //stop youtube video from playing in hidden modal
 
@@ -82,12 +82,12 @@ $(document).ready(function(){
 
   //randomize Json function
 
-  function Shuffle(o) {
+  /*function Shuffle(o) {
     for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
     return o;
-  };
+  };*/
 
-  function jumbo(){
+  /*function jumbo(){
     $.getJSON("movies.json", function(data){
       for(i = 0 ; i <= 3; i++){
         let img = data[i].url;
@@ -110,11 +110,11 @@ $(document).ready(function(){
         $('#jumbomod3').html(data[index2].storyline + '<br><strong>Date de sortie</strong>: ' + data[index2].date + '<br><strong>Realisateur</strong>: ' + data[index2].real + '<br><strong>Avec</strong>: ' + data[index2].actor);
       });
     });
-  }
+  }*/
 
   jumbo();
 
-  function show(data) {
+  /*function show(data) {
     let img = data[i].url;
     let year = data[i].date;
     let title = data[i].name;
@@ -129,14 +129,14 @@ $(document).ready(function(){
       $(entry).appendTo($('.wrapperJson'));
     }
   }
-
-  function clear() {
+*/
+  /*function clear() {
     $(".wrapperJson").empty();
     $(".wrapperJson2").empty();
     $(".wrapperJson3").empty();
-  }
+  }*/
 
-  function movies(json) {
+/*  function movies(json) {
     clear();
     $.getJSON(json, function(data){
       for(i in data) {
@@ -167,7 +167,7 @@ $(document).ready(function(){
 
   $("#allButton").click(function(){
     all();
-  });
+  });*/
 
   // show more or less movies on featured section
 
@@ -367,5 +367,4 @@ function scrollFunction() {
         document.getElementById("btnArrow").style.display= 'block';
     } else {
         document.getElementById("btnArrow").style.display = 'none';
-    }
-}
+    }};
