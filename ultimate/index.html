@@ -10,8 +10,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <!--tout ds un seul-->
-    <!--<link rel="stylesheet" href="face.css">
-    <link rel="stylesheet" href="mediaq.css">-->
+    <link rel="stylesheet" href="face.css">
+    <link rel="stylesheet" href="mediaq.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
     <link rel="icon" href="images/favicon-256.png">
     <title>AllezCiné</title>
@@ -198,7 +198,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#Page"><span class="cRouge">ALLEZ</span>CINE!</a>
+            <a class="navbar-brand" href="#Page"><span class="Rouge">ALLEZ</span>CINE!</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -206,10 +206,10 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">GENRE <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#featuredMovies" onclick="filterMovAdventure()">Adventure</a></li>
+                        <li><a href="#featuredMovies" onclick="filterMovAdventure()">Aventure</a></li>
                         <li><a href="#featuredMovies" onclick="filterMovComedy()">Comedy</a></li>
                         <li><a href="#featuredMovies" onclick="filterMovDrama()">Drama</a></li>
-                        <li><a href="#featuredMovies" onclick="filterMovFantasy()">Fantasy</a></li>
+                        <!--<li><a href="#featuredMovies" onclick="filterMovFantasy()">Fantasy</a></li>-->
                         <li><a href="#featuredMovies" onclick="filterMovSciFi()">Sci-Fi</a></li>
                         <li><a href="#featuredMovies" onclick="filterMovThriller()">Thriller</a></li>
                     </ul>
@@ -329,7 +329,7 @@
                             <input type="checkbox" id="stay" name="stay">
                             <span>Remember me</span>
                         </div>
-                        <button type="button" class="btn btn-primary logreg" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">Créer un compte</button>
+                        <button type="button" class="btn btn-primary logreg" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">Create account</button>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -646,10 +646,10 @@
                                 <h3>FEATURED MOVIES</h3>
                                 <div class="filtres">
                                     <button class="filtre_active" onclick="filterMovAll()">All</button>
-                                    <button id="showAdventure" onclick="filterMovAdventure() ">Adventure</button>
+                                    <button id="showAdventure" onclick="filterMovAdventure() ">Aventure</button>
                                     <button id="showComedy" onclick="filterMovComedy()">Comédie</button>
                                     <button id="showDrama" onclick="filterMovDrama()">Drama</button>
-                                    <button id="showFantasy" onclick="filterMovFantasy() ">Fantasy</button>
+                                    <!--<button id="showFantasy" onclick="filterMovFantasy() ">Fantasy</button>-->
                                     <button id="showSciFi" onclick="filterMovSciFi() ">Sci-Fi</button>
                                     <button id="showThriller" onclick="filterMovThriller() ">Thriller</button>
                                 </div>
@@ -765,165 +765,165 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
+                                        <div class="col-xs-6 col-sm-3 col-md-2 SciFi">
                                             <div class="thumbnail">
-                                                <img src="assets/img/poster_lebowski.jpg" alt="">
+                                                <img src="images/PremierContact-2016-scifi.jpg" alt="Premier Contact" height="200px">
                                                 <div class="caption">
-                                                    <h5>The Big Lebowski</h5>
-                                                    <p>1998</p>
+                                                    <h5>Premier Contact</h5>
+                                                    <p>2016</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-6 col-sm-3 col-md-2 Comedy Drama">
+                                        <div class="col-xs-6 col-sm-3 col-md-2 Thriller">
                                             <div class="thumbnail">
-                                                <img src="assets/img/poster_lavita.jpg" alt="">
+                                                <img src="images/OldBoy-2003-thriller.jpg" alt="Old Boy" height="200px">
                                                 <div class="caption">
-                                                    <h5>La Vita E Bella</h5>
-                                                    <p>1997</p>
+                                                    <h5>Old Boy</h5>
+                                                    <p>2003</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-xs-6 col-sm-3 col-md-2 Drama">
                                             <div class="thumbnail">
-                                                <img src="assets/img/poster_jagten.jpg" alt="">
+                                                <img src="TheLastGirl-2017-thriller.jpg" alt="The Last Girl">
                                                 <div class="caption">
-                                                    <h5>Jagten</h5>
-                                                    <p>2012</p>
+                                                    <h5>The Last Girl</h5>
+                                                    <p>2017</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-6 col-sm-3 col-md-2 Fantasy Comedy">
+                                        <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
                                             <div class="thumbnail">
-                                                <img src="assets/img/poster_groundhog.jpg" alt="">
+                                                <img src="images/WrongCops-2013-comedie.jpg" alt="Wrong Cops" height="200px">
                                                 <div class="caption">
-                                                    <h5>Groundhog Day</h5>
+                                                    <h5>Wrong Cops</h5>
+                                                    <p>2013</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
+                                            <div class="thumbnail">
+                                                <img src="images/Realite-2015-comedie.jpg" alt="Réalité" height="200px">
+                                                <div class="caption">
+                                                    <h5>Réalité</h5>
+                                                    <p>2015</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-3 col-md-2 SciFi">
+                                            <div class="thumbnail">
+                                                <img src="images/ghost-1995.jpg" alt="Ghost In The Shell" height="200px">
+                                                <div class="caption">
+                                                    <h5>Ghost In The Shell</h5>
+                                                    <p>1995</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-3 col-md-2 SciFi">
+                                            <div class="thumbnail">
+                                                <img src="images/Chappie-2015-scifi.jpg" alt="Chappie" height="200px">
+                                                <div class="caption">
+                                                    <h5>Chappie</h5>
+                                                    <p>2015</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-3 col-md-2 Thriller">
+                                            <div class="thumbnail">
+                                                <img src="images/hostel-2005-thriller.jpg" alt="Hostel" height="200px">
+                                                <div class="caption">
+                                                    <h5>Hostel</h5>
+                                                    <p>2005</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-3 col-md-2 SciFi Comedy">
+                                            <div class="thumbnail">
+                                                <img src="iamges/theLittleHours-2017-comedie.jpg" alt="The Little Hours" height="200px">
+                                                <div class="caption">
+                                                    <h5>The Little Hourss</h5>
+                                                    <p>2017</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-3 col-md-2 SciFi">
+                                            <div class="thumbnail">
+                                                <img src="images/automata-2014.jpg" alt="Automata" height="200px">
+                                                <div class="caption">
+                                                    <h5>Automata</h5>
+                                                    <p>2014</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-3 col-md-2 Thriller">
+                                            <div class="thumbnail">
+                                                <img src="images/The_Witch-2016-Thriller.jpg" alt="The Witch" height="200px">
+                                                <div class="caption">
+                                                    <h5>The Witch</h5>
+                                                    <p>2016</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
+                                            <div class="thumbnail">
+                                                <img src="images/La_Classe_americaine-1993-comedie.png" alt="La Classe Américaine" height="200px">
+                                                <div class="caption">
+                                                    <h5>La Classe Américaine</h5>
                                                     <p>1993</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
                                             <div class="thumbnail">
-                                                <img src="assets/img/poster_borat.jpg" alt="">
+                                                <img src="images/zoolander-2001-comedie.jpg" alt="Zoolander" height="200px">
                                                 <div class="caption">
-                                                    <h5>Borat</h5>
-                                                    <p>2006</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-3 col-md-2 Fantasy Thriller SciFi">
-                                            <div class="thumbnail">
-                                                <img src="assets/img/poster_donnie.jpg" alt="">
-                                                <div class="caption">
-                                                    <h5>Donnie Darko</h5>
+                                                    <h5>Zoolander</h5>
                                                     <p>2001</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-6 col-sm-3 col-md-2 Adventure Thriller Drama">
+                                        <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
                                             <div class="thumbnail">
-                                                <img src="assets/img/poster_dasboot.jpg" alt="">
+                                                <img src="images/swissarmyman-2016-comedie.jpg" alt="Swiss Army Man" height="200px">
                                                 <div class="caption">
-                                                    <h5>Das Boot</h5>
-                                                    <p>1981</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-3 col-md-2 Thriller Drama">
-                                            <div class="thumbnail">
-                                                <img src="assets/img/poster_cidade.jpg" alt="">
-                                                <div class="caption">
-                                                    <h5>Cidade De Deus</h5>
-                                                    <p>2002</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-3 col-md-2 SciFi Thriller">
-                                            <div class="thumbnail">
-                                                <img src="assets/img/poster_chrono.jpg" alt="">
-                                                <div class="caption">
-                                                    <h5>Los Cronocrimenes</h5>
-                                                    <p>2007</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-3 col-md-2 Adventure Fantasy Drama">
-                                            <div class="thumbnail">
-                                                <img src="assets/img/poster_chihiro.jpg" alt="">
-                                                <div class="caption">
-                                                    <h5>Spirited Away</h5>
-                                                    <p>2001</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-3 col-md-2 Comedy Drama">
-                                            <div class="thumbnail">
-                                                <img src="assets/img/poster_captain.jpg" alt="">
-                                                <div class="caption">
-                                                    <h5>Captain Fantastic</h5>
+                                                    <h5>Swiss Army Man</h5>
                                                     <p>2016</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-6 col-sm-3 col-md-2 SciFi Drama">
+                                        <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
                                             <div class="thumbnail">
-                                                <img src="assets/img/poster_blade.jpg" alt="">
+                                                <img src="images/WhatWeDoInTheShadows-2014-comedie.jpg" alt="What We Do In The Shadows" height="200px">
                                                 <div class="caption">
-                                                    <h5>Blade Runner 2049</h5>
-                                                    <p>2017</p>
+                                                    <h5>What We Do In The Shadows</h5>
+                                                    <p>2014</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-6 col-sm-3 col-md-2 Comedy Drama">
+                                        <div class="col-xs-6 col-sm-3 col-md-2 Thriller">
                                             <div class="thumbnail">
-                                                <img src="assets/img/poster_beauty.jpg" alt="">
+                                                <img src="images/shutterisland-2010-thriller.jpg" alt="Shutter Island" height="200px">
                                                 <div class="caption">
-                                                    <h5>American Beauty</h5>
-                                                    <p>1999</p>
+                                                    <h5>Shutter Island</h5>
+                                                    <p>2010</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-6 col-sm-3 col-md-2 SciFi Fantasy Adventure">
+                                        <div class="col-xs-6 col-sm-3 col-md-2 Aventure">
                                             <div class="thumbnail">
-                                                <img src="assets/img/poster_avatar.jpg" alt="">
+                                                <img src="images/BlackPanther-2018-aventure.jpg" alt="Black Panther" height="200px">
                                                 <div class="caption">
-                                                    <h5>Avatar</h5>
-                                                    <p>2009</p>
+                                                    <h5>Black Panther</h5>
+                                                    <p>2018</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-6 col-sm-3 col-md-2 Drama">
+                                        <div class="col-xs-6 col-sm-3 col-md-2 Thriller">
                                             <div class="thumbnail">
-                                                <img src="assets/img/poster_therewillbeblood.jpg" alt="">
+                                                <img src="images/Dobermann-1997-thriller.jpg" alt="Dobermann" height="200px">
                                                 <div class="caption">
-                                                    <h5>There Will Be Blood</h5>
-                                                    <p>2007</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-3 col-md-2 Adventure Drama">
-                                            <div class="thumbnail">
-                                                <img src="assets/img/poster_standbyme.jpg" alt="">
-                                                <div class="caption">
-                                                    <h5>Stand By Me</h5>
-                                                    <p>1986</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-3 col-md-2 Thriller Drama">
-                                            <div class="thumbnail">
-                                                <img src="assets/img/poster_mother.jpg" alt="">
-                                                <div class="caption">
-                                                    <h5>Mother!</h5>
-                                                    <p>2017</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-3 col-md-2 Adventure Fantasy Drama">
-                                            <div class="thumbnail">
-                                                <img src="assets/img/poster_lifeofpi.jpg" alt="">
-                                                <div class="caption">
-                                                    <h5>Life Of Pi</h5>
-                                                    <p>2012</p>
+                                                    <h5>Dobermann</h5>
+                                                    <p>1997</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -946,206 +946,206 @@
                             <h3>FEATURED SERIES</h3>
                             <div class="filtres">
                                 <button class="filtre_active" onclick="filterSeriesAll()">All</button>
+                                <button id="viewAdventure" onclick="filterSeriesAdventure()">Adventure</button>
                                 <button id="viewComedy" onclick="filterSeriesComedy()">Comedy</button>
                                 <button id="viewDrama" onclick="filterSeriesDrama()">Drama</button>
-                                <button id="viewAdventure" onclick="filterSeriesAdventure()">Adventure</button>
-                                <button id="viewThriller" onclick="filterSeriesThriller()">Thriller</button>
-                                <button id="viewFantasy" onclick="filterSeriesFantasy()">Fantasy</button>
+                                <!--<button id="viewFantasy" onclick="filterSeriesFantasy()">Fantasy</button>-->
                                 <button id="viewSciFi" onclick="filterSeriesSciFi()">Sci-Fi</button>
+                                <button id="viewThriller" onclick="filterSeriesThriller()">Thriller</button>
                             </div>
 
 
                             <div class="container feature_series_container">
                                 <div class="row">
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Thriller Drama">
+                                    <div class="col-xs-6 col-sm-3 col-md-2 Scifi">
                                         <div class="thumbnail">
-                                            <img src="assets/img/series_breaking.jpg" alt="">
+                                            <img src="images/serie/AlteredCarbon-2018-scifi.jpg" alt="Altered Carbon">
                                             <div class="caption">
-                                                <h5>Breaking Bad</h5>
+                                                <h5>Altered Carbon</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-2 Thriller">
+                                        <div class="thumbnail">
+                                            <img src="images/serie/AmericanHorrorStory-2011-thriller.jpg" alt="American Horror Story">
+                                            <div class="caption">
+                                                <h5>American Horror Story</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
+                                        <div class="thumbnail">
+                                            <img src="images/serie/BlackBooks-2000-comedie.jpg" alt="Black Books">
+                                            <div class="caption">
+                                                <h5>Black Books</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-2 SciFi">
+                                        <div class="thumbnail">
+                                            <img src="images/serie/Dark-2017-scifi.jpg" alt="Dark">
+                                            <div class="caption">
+                                                <h5>Dark</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
+                                        <div class="thumbnail">
+                                            <img src="images/serie/DontHugMeImScared-2011-comedie.jpg" alt="Don't Hug Me I'm Scared">
+                                            <div class="caption">
+                                                <h5>Don't Hug Me I'm Scared</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
+                                        <div class="thumbnail">
+                                            <img src="images/serie/HeroCorp-2008-comedie.jpg" alt="hero Corp">
+                                            <div class="caption">
+                                                <h5>Hero Corp</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-2 SciFi">
+                                        <div class="thumbnail">
+                                            <img src="images/serie/Humans-2015-scifi.jpg" alt="Humans">
+                                            <div class="caption">
+                                                <h5>Humans</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-2 Aventure">
+                                        <div class="thumbnail">
+                                            <img src="images/serie/IntoTheBadlands-2015-aventure.jpg" alt="Into The Badlands">
+                                            <div class="caption">
+                                                <h5>Into The Badlands</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-2 Thriller">
+                                        <div class="thumbnail">
+                                            <img src="images/serie/Jordskott-2015-thriller.jpg" alt="Jordskott">
+                                            <div class="caption">
+                                                <h5>Jordskott</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-2 SciFi">
+                                        <div class="thumbnail">
+                                            <img src="images/serie/Killjoys-2015-scifi.jpg" alt="Killjoys">
+                                            <div class="caption">
+                                                <h5>Killjoys</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
+                                        <div class="thumbnail">
+                                            <img src="images/serie/MasterofNone-2015-comedie.jpg" alt="Master Of None">
+                                            <div class="caption">
+                                                <h5>Master of None</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
+                                        <div class="thumbnail">
+                                            <img src="images/serie/Misfits-2009-comedie.jpg" alt="Misfits">
+                                            <div class="caption">
+                                                <h5>Misfits</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
+                                        <div class="thumbnail">
+                                            <img src="images/serie/Plebs-2013-comedie.jpg" alt="Plebs">
+                                            <div class="caption">
+                                                <h5>Plebs</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-2 SciFi">
+                                        <div class="thumbnail">
+                                            <img src="images/serie/The100-2014-scifi.jpg" alt="The 100">
+                                            <div class="caption">
+                                                <h5>The 100</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
+                                        <div class="thumbnail">
+                                            <img src="images/serie/TheAliens-2016-comedie.jpg" alt="The Aliens">
+                                            <div class="caption">
+                                                <h5>The Aliens</h5>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-3 col-md-2 Drama">
                                         <div class="thumbnail">
-                                            <img src="assets/img/series_cards.jpg" alt="">
+                                            <img src="images/serie/TheCode-2014-drama.jpg" alt="The Code">
                                             <div class="caption">
-                                                <h5>House Of Cards</h5>
+                                                <h5>The Code</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-2 SciFi">
+                                        <div class="thumbnail">
+                                            <img src="images/serie/TheExpanse-2015-scifi.jpg" alt="The Expanse">
+                                            <div class="caption">
+                                                <h5>The Expanse</h5>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-3 col-md-2 Drama">
                                         <div class="thumbnail">
-                                            <img src="assets/img/series_dekalog.jpg" alt="">
+                                            <img src="images/serie/TheHandmaidsTale-2017-drama.jpg" alt="The Handmaid's Tale">
                                             <div class="caption">
-                                                <h5>Dekalog</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Drama Fantasy SciFi">
-                                        <div class="thumbnail">
-                                            <img src="assets/img/series_leftovers.jpg" alt="">
-                                            <div class="caption">
-                                                <h5>The Leftovers</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 SciFi Drama Thriller">
-                                        <div class="thumbnail">
-                                            <img src="assets/img/series_mirror.jpg" alt="">
-                                            <div class="caption">
-                                                <h5>Black Mirror</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Drama Thriller">
-                                        <div class="thumbnail">
-                                            <img src="assets/img/series_narcos.jpg" alt="">
-                                            <div class="caption">
-                                                <h5>Narcos</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Adventure Drama">
-                                        <div class="thumbnail">
-                                            <img src="assets/img/series_rome.jpg" alt="">
-                                            <div class="caption">
-                                                <h5>Rome</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Thriller Drama">
-                                        <div class="thumbnail">
-                                            <img src="assets/img/series_wire.jpg" alt="">
-                                            <div class="caption">
-                                                <h5>The Wire</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
-                                        <div class="thumbnail">
-                                            <img src="assets/img/series_curb.jpg" alt="">
-                                            <div class="caption">
-                                                <h5>Curb Your Enthusiasm</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
-                                        <div class="thumbnail">
-                                            <img src="assets/img/series_crowd.jpg" alt="">
-                                            <div class="caption">
-                                                <h5>The IT Crowd</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Adventure Drama">
-                                        <div class="thumbnail">
-                                            <img src="assets/img/series_deadwood.jpg" alt="">
-                                            <div class="caption">
-                                                <h5>Deadwood</h5>
+                                                <h5>The Handmaid's Tale</h5>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-3 col-md-2 Drama">
                                         <div class="thumbnail">
-                                            <img src="assets/img/series_downton.jpg" alt="">
+                                            <img src="images/serie/TheLivingandtheDead-2016-drama.jpg" alt="The Living And The Dead">
                                             <div class="caption">
-                                                <h5>Downton Abbey</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Thriller Comedy Drama">
-                                        <div class="thumbnail">
-                                            <img src="assets/img/series_fargo.jpg" alt="">
-                                            <div class="caption">
-                                                <h5>Fargo</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Fantasy Adventure">
-                                        <div class="thumbnail">
-                                            <img src="assets/img/series_got.jpg" alt="">
-                                            <div class="caption">
-                                                <h5>Game Of Thrones</h5>
+                                                <h5>The Living And The Dead</h5>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-3 col-md-2 Drama">
                                         <div class="thumbnail">
-                                            <img src="assets/img/series_knick.jpg" alt="">
+                                            <img src="images/serie/TheNightManager-2016-drama.jpg" alt="The Night Manager">
                                             <div class="caption">
-                                                <h5>The Knick</h5>
+                                                <h5>The Night Manager</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Thriller Drama">
+                                    <div class="col-xs-6 col-sm-3 col-md-2 Thriller">
                                         <div class="thumbnail">
-                                            <img src="assets/img/series_night.jpg" alt="">
+                                            <img src="images/serie/TheTerror-2018-thriller.jpg" alt="The Terror">
                                             <div class="caption">
-                                                <h5>The Night Of</h5>
+                                                <h5>The Terror</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
+                                    <div class="col-xs-6 col-sm-3 col-md-2 Drama">
                                         <div class="thumbnail">
-                                            <img src="assets/img/series_office.jpg" alt="">
+                                            <img src="images/serie/TrueDetective-2014-drama.jpg" alt="True Detective">
                                             <div class="caption">
-                                                <h5>The Office</h5>
+                                                <h5>True Detective</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Thriller Drama">
+                                    <div class="col-xs-6 col-sm-3 col-md-2 Aventure">
                                         <div class="thumbnail">
-                                            <img src="assets/img/series_ray.jpg" alt="">
+                                            <img src="images/serie/Vikings-2013-aventure.jpg" alt="Vikings">
                                             <div class="caption">
-                                                <h5>Ray Donovan</h5>
+                                                <h5>Vikings</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Adventure SciFi Comedy">
+                                    <div class="col-xs-6 col-sm-3 col-md-2 Aventure">
                                         <div class="thumbnail">
-                                            <img src="assets/img/series_rick.jpg" alt="">
+                                            <img src="images/serie/WynonnaEarp-2016-aventure.jpg" alt="Wynonna Earp">
                                             <div class="caption">
-                                                <h5>Rick & Morty</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Thriller Drama">
-                                        <div class="thumbnail">
-                                            <img src="assets/img/series_robot.jpg" alt="">
-                                            <div class="caption">
-                                                <h5>Mr Robot</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Comedy Drama">
-                                        <div class="thumbnail">
-                                            <img src="assets/img/series_saul.jpg" alt="">
-                                            <div class="caption">
-                                                <h5>Better Call Saul</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
-                                        <div class="thumbnail">
-                                            <img src="assets/img/series_thick.jpg" alt="">
-                                            <div class="caption">
-                                                <h5>The Thick Of It</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Fantasy Thriller Drama">
-                                        <div class="thumbnail">
-                                            <img src="assets/img/series_twin.jpg" alt="">
-                                            <div class="caption">
-                                                <h5>Twin Peaks</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-2 Comedy">
-                                        <div class="thumbnail">
-                                            <img src="assets/img/series_wonderfall.jpg" alt="">
-                                            <div class="caption">
-                                                <h5>Wonderfall</h5>
+                                                <h5>Wynonna Earp</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -1163,22 +1163,22 @@
 
                 <br>
                 <!-- MOVIE SHOP -->
-                <section id="movieShop" class="shop_movies">
+                <!--<section id="movieShop" class="shop_movies">
                     <div class="container">
                         <h3>MOVIE SHOP</h3>
                         <div id="shopCarousel" class="carousel slide" data-interval="false">
-                            <!-- arrows -->
+                             arrows
                             <div class="arrowWrap">
                                 <a class="arrowBox" href="#shopCarousel" data-slide="prev"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
                                 <a class="arrowBox" href="#shopCarousel" data-slide="next"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
                             </div>
-                            <!-- THE SLIDES -->
+                             THE SLIDES
                             <div class="carousel-inner">
-                                <!-- slide -->
+                                 slide
                                 <div class="item active">
                                     <div class="container-fluid">
                                         <div class="row">
-                                            <!-- THUMBS SLIDE 1 -->
+                                            THUMBS SLIDE 1
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 thumbs">
                                                 <div class="row">
                                                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 pouce">
@@ -1311,7 +1311,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- DETAIL SLIDE 1 -->
+                                             DETAIL SLIDE 1
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 detail">
                                                 <div class="embed-responsive embed-responsive-16by9">
                                                     <span id="detailVid"><iframe id="movShopVid1" class="embed-responsive-item" src="https://www.youtube.com/embed/jQ5lPt9edzQ"></iframe></span>
@@ -1357,11 +1357,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- slide -->
+                                slide
                                 <div class="item">
                                     <div class="container-fluid">
                                         <div class="row">
-                                            <!-- THUMBS SLIDE 2 -->
+                                             THUMBS SLIDE 2
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 thumbs">
                                                 <div class="row">
                                                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 pouce">
@@ -1494,7 +1494,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- DETAIL SLIDE 2 -->
+                                             DETAIL SLIDE 2
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 detail">
                                                 <div class="embed-responsive embed-responsive-16by9">
                                                     <span id="detailVid2"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wvwVkllXT80"></iframe></span>
@@ -1543,8 +1543,222 @@
                             </div>
                         </div>
                     </div>
-                </section>
-
+                </section>-->
+                <!-- Shop Movies -->
+                <div class="shopmovies-container">
+                  <div class="title" id="shop-movies"><h2>Shop Movies</h2></div>
+                  <div class="row mainrow">
+                    <div class="col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                      <div class="row">
+                        <div class="col-md-2-5" id="card-shopmovies">
+                          <img src="images/thefall-2006-dramatique.jpg" alt="The Fall" height="200px">
+                          <div class="shopinfo">
+                              <h5>The Fall</h5>
+                              <p class="left">10€</p>
+                              <p class="right">2006</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2-5">
+                          <img src="images/hostel-2005-thriller.jpg" alt="Hostel" height="200px">
+                          <div class="shopinfo">
+                              <h5>Hostel</h5>
+                              <p class="left">10€</p>
+                              <p class="right">2005</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2-5">
+                          <img src="images/inception-2010-scifi.jpg" alt="Inception" height="200px">
+                          <div class="shopinfo">
+                              <h5>Inception</h5>
+                              <p class="left">13€</p>
+                              <p class="right">2010</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2-5">
+                          <img src="images/intouchables-2011-comedie.jpg" alt="Intouchables" height="200px">
+                          <div class="shopinfo">
+                              <h5>Intouchables</h5>
+                              <p class="left">13€</p>
+                              <p class="right">2011</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-2-5" id="card-shopmovies">
+                          <img src="images/lepatientanglais-1996-dramatique.jpg" alt="Le Patient Anglais" height="200px">
+                          <div class="shopinfo">
+                              <h5>Le Patient Anglais</h5>
+                              <p class="left">3€</p>
+                              <p class="right">1996</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2-5">
+                          <img src="images/lesdeuxtours-2002-aventure.jpg" alt="Les Deux Tours" height="200px">
+                          <div class="shopinfo">
+                              <h5>Les Deux Tours</h5>
+                              <p class="left">7€</p>
+                              <p class="right">2002</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2-5">
+                          <img src="images/seven-1995-thriller.jpg" alt="Seven" height="200px">
+                          <div class="shopinfo">
+                              <h5>Seven</h5>
+                              <p class="left">3€</p>
+                              <p class="right">1995</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2-5">
+                          <img src="images/starwarsempire-1980-scifi.jpg" alt="Star Wars : Episode V - L'Empire Contre-Attaque" height="200px">
+                          <div class="shopinfo">
+                              <h5>Star Wars : L'Empire<br>Contre-Attaque</h5>
+                              <p class="left">1€</p>
+                              <p class="right">1980</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5" id="trailer-box">
+                      <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+                        <div class="btn-group small-arrows" role="group" aria-label="Small Arrows">
+                          <button type="button" href="#multi-item-example" class="btn btn-dark btn-sm" id="previous" data-slide="prev"><</button>
+                          <button type="button" href="#multi-item-example" class="btn btn-dark btn-sm" id="next" data-slide="next">></button>
+                        </div>
+                        <!-- First trailer -->
+                        <div class="carousel-inner" role="listbox">
+                              <div class="carousel-item active">
+                                <div class="card bg-dark mb-3 trailer-container" id="trailer1">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/IwsYyRc9j4g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                              </div>
+                                <div class="card-body card-trailer">
+                                  <p class="card-title">The Fall</p>
+                                  <p class="card-text">Synopsis: <em>Dans les années 1920, dans un hôpital à Los Angeles,
+                                    une petite fille prénommée Alexandria qui s'est cassé le bras se lie d'amitié avec le cascadeur Roy Walker qui s'est blessé lors du tournage d'un film.
+                                    Roy raconte alors une histoire fabuleuse à Alexandria, dont les personnages sont inspirés par les gens de l'entourage :
+                                    une infirmière, un autre patient, lui-même… </em></p>
+                                  <p class="card-text">Sorti en <em>2016</em></p>
+                                  <p class="card-text">Genre: <em>dramatique</em></p>
+                                  <p class="card-text">Prix: <em>10€</em></p>
+                                </div>
+                            </div>
+                          </div>
+                          <!-- Second trailer -->
+                              <div class="carousel-item">
+                            <div class="card bg-dark mb-3 trailer-container" id="trailer2">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/6lFWAMCbTBM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                              </div>
+                                <div class="card-body card-trailer">
+                                  <p class="card-title">Hostel</p>
+                                  <p class="card-text"><strong>INTERDIT AUX MOINS DE 16 ANS</strong></p>
+                                  <p class="card-text">Synopsis: <em>Deux étudiants américains, Paxton et Josh, ont décidé de découvrir l'Europe avec un maximum d'aventures et de sensations fortes. Avec Oli, un Islandais qu'ils ont rencontré en chemin, ils se retrouvent dans une petite ville de Slovaquie dans ce qu'on leur a décrit comme le nirvana des vacances de débauche : une propriété très spéciale, pleine de filles aussi belles que faciles...
+                                    Natalya et Svetlana sont effectivement très cools... un peu trop, même. Paxton et Josh vont vite se rendre compte qu'ils sont tombés dans un piège. Ce voyage-là va les conduire au bout de l'horreur...</em></p>
+                                  <p class="card-text">Sorti en <em>2005</em></p>
+                                  <p class="card-text">Genre: <em>Thriller</em></p>
+                                  <p class="card-text">Prix: <em>10€</em></p>
+                                </div>
+                            </div>
+                          </div>
+                          <!-- Third trailer -->
+                              <div class="carousel-item">
+                            <div class="card bg-dark mb-3 trailer-container" id="trailer3">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/YoHD9XEInc0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                              </div>
+                                <div class="card-body card-trailer">
+                                  <p class="card-title">Inception</p>
+                                  <p class="card-text">Synopsis: <em>Dom Cobb est un voleur expérimenté – le meilleur qui soit dans l’art périlleux de l’extraction : sa spécialité consiste à s’approprier les secrets les plus précieux d’un individu, enfouis au plus profond de son subconscient, pendant qu’il rêve et que son esprit est particulièrement vulnérable. Très recherché pour ses talents dans l’univers trouble de l’espionnage industriel, Cobb est aussi devenu un fugitif traqué dans le monde entier qui a perdu tout ce qui lui est cher. Mais une ultime mission pourrait lui permettre de retrouver sa vie d’avant – à condition qu’il puisse accomplir l’impossible : l’inception.</em></p>
+                                  <p class="card-text">Sorti en <em>2010</em></p>
+                                  <p class="card-text">Genre: <em>Scifi</em></p>
+                                  <p class="card-text">Prix: <em>13€</em></p>
+                                </div>
+                            </div>
+                          </div>
+                          <!-- Fourth trailer -->
+                              <div class="carousel-item">
+                            <div class="card bg-dark mb-3 trailer-container" id="trailer4">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/34WIbmXkewU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                              </div>
+                                <div class="card-body card-trailer">
+                                  <p class="card-title">Intouchables</p>
+                                  <p class="card-text">Synopsis: <em>A la suite d’un accident de parapente, Philippe, riche aristocrate, engage comme aide à domicile Driss, un jeune de banlieue tout juste sorti de prison. Bref la personne la moins adaptée pour le job. Ensemble ils vont faire cohabiter Vivaldi et Earth Wind and Fire, le verbe et la vanne, les costumes et les bas de survêtement... Deux univers vont se télescoper, s’apprivoiser, pour donner naissance à une amitié aussi dingue, drôle et forte qu’inattendue, une relation unique qui fera des étincelles et qui les rendra... Intouchables.</em></p>
+                                  <p class="card-text">Sorti en <em>2011</em></p>
+                                  <p class="card-text">Genre: <em>Comédie</em></p>
+                                  <p class="card-text">Prix: <em>13€</em></p>
+                                </div>
+                            </div>
+                          </div>
+                          <!-- Fifth trailer -->
+                            <div class="carousel-item">
+                            <div class="card bg-dark mb-3 trailer-container" id="trailer5">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/c09xx1dlkBI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                              </div>
+                                <div class="card-body card-trailer">
+                                  <p class="card-title">Le Patient Anglais</p>
+                                  <p class="card-text">Synopsis: <em>En 1945, quatre personnes dechirées par la guerre se réfugient dans un monastère abandonné de Toscane pour se guérir de leurs maux. Peu à peu le passé va resurgir et la présence d'un homme mystérieux et méconnaissable, le patient anglais, va bouleverser le destin de ceux qui croisent son chemin.</em></p>
+                                  <p class="card-text">Sorti en <em>1996</em></p>
+                                  <p class="card-text">Genre: <em>Dramatique</em></p>
+                                  <p class="card-text">Price: <em>3€</em></p>
+                                </div>
+                            </div>
+                          </div>
+                          <!-- Sixth trailer -->
+                            <div class="carousel-item">
+                            <div class="card bg-dark mb-3 trailer-container" id="trailer6">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/c9blKqmyeV4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                              </div>
+                              <div class="card-body card-trailer">
+                                <p class="card-title">Les Deux Tours</p>
+                                <p class="card-text">Synopsis: <em>Après la mort de Boromir et la disparition de Gandalf,
+                                  la `Communauté' s'est scindée en trois. Perdus dans les collines d'`Emyn Muil',
+                                  Frodon et Sam découvrent qu'ils sont suivis par Gollum, une créature versatile corrompue par l'anneau magique.
+                                  Gollum promet de conduire les `Hobbits' jusqu'à la `Porte Noire' du `Mordor'. A travers la `Terre du Milieu',
+                                  Aragorn, Legolas et Gimli font route vers le `Rohan', le royaume assiégé de Theoden.</em></p>
+                                <p class="card-text">Sorti en <em>2002</em></p>
+                                <p class="card-text">Genre: <em>Aventure</em></p>
+                                <p class="card-text">Prix: <em>7€</em></p>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Seventh trailer -->
+                          <div class="carousel-item">
+                            <div class="card bg-dark mb-3 trailer-container" id="trailer7">
+                              <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/znmZoVkCjpI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                              </div>
+                              <div class="card-body card-trailer">
+                                <p class="card-title">Seven</p>
+                                <p class="card-text">Synopsis: <em>Pour conclure sa carrière, l'inspecteur Somerset, vieux flic blasé, tombe à sept jours de la retraite sur un criminel peu ordinaire. John Doe, c'est ainsi que se fait appeler l'assassin, a decidé de nettoyer la societé des maux qui la rongent en commettant sept meurtres basés sur les sept pechés capitaux: la gourmandise, l'avarice, la paresse, l'orgueil, la luxure, l'envie et la colère.</em></p>
+                                <p class="card-text">Sorti en <em>1995</em></p>
+                                <p class="card-text">Genre: <em>Thriller</em></p>
+                                <p class="card-text">Prix: <em>3€</em></p>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Eighth trailer -->
+                              <div class="carousel-item">
+                            <div class="card bg-dark mb-3 trailer-container" id="trailer8">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/JNwNXF9Y6kY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                              </div>
+                                <div class="card-body card-trailer">
+                                  <p class="card-title">STAR WARS : EPISODE V - L'EMPIRE CONTRE-ATTAQUE</p>
+                                  <p class="card-text">Synopsis: <em>Malgré la destruction de l'Etoile Noire, l'Empire maintient son emprise sur la galaxie, et poursuit sans relâche sa lutte contre l'Alliance rebelle. Basés sur la planète glacée de Hoth, les rebelles essuient un assaut des troupes impériales. Parvenus à s'échapper, la princesse Leia, Han Solo, Chewbacca et C-3P0 se dirigent vers Bespin, la cité des nuages gouvernée par Lando Calrissian, ancien compagnon de Han. Suivant les instructions d'Obi-Wan Kenobi, Luke Skywalker se rend quant à lui vers le système de Dagobah, planète marécageuse où il doit recevoir l'enseignement du dernier maître Jedi, Yoda. Apprenant l'arrestation de ses compagnons par les stormtroopers de Dark Vador après la trahison de Lando, Luke décide d'interrompre son entraînement pour porter secours à ses amis et affronter le sombre seigneur Sith...</em></p>
+                                  <p class="card-text">Sorti en <em>1980</em></p>
+                                  <p class="card-text">Genre: <em>Scifi</em></p>
+                                  <p class="card-text">Prix: <em>1€</em></p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
 
                 <br>
@@ -1588,7 +1802,8 @@
                             <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 gMap">
                                 <div class="embed-responsive embed-responsive-16by9 panel panel-default">
                                     <div class="panel-body">
-                                        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d314.9043552307475!2d4.357110655340952!3d50.84533535285926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47fce0ba71d%3A0x2f634768a374d3b0!2sCantersteen+10%2C+1000+Bruxelles!5e0!3m2!1sfr!2sbe!4v1529996192615"></iframe>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.153748787336!2d3.7769096507346034!3d50.43823679602604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c25816f8e8d13b%3A0xdad611e3d37b3286!2sRive+Gauche+de+la+Haine+13%2C+7300+Boussu!5e0!3m2!1sfr!2sbe!4v1530264353161" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        <!--<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.153748787336!2d3.7769096507346034!3d50.43823679602604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c25816f8e8d13b%3A0xdad611e3d37b3286!2sRive+Gauche+de+la+Haine+13%2C+7300+Boussu!5e0!3m2!1sfr!2sbe!4v1530264353161"></iframe>-->
                                     </div>
                                 </div>
                             </div>
@@ -1596,9 +1811,9 @@
                     </div>
                 </section>
 
-<!-- THE FANTASTIC BUTTON -->
+<!-- To top BUTTON -->
   <canvas class="canvas" id="mon_canvas" width="100" height="100">
-      Oups!!!
+      whateva
   </canvas>
 
                 <br><br>
@@ -1632,12 +1847,12 @@
                         <div class="col-lg-2 col-md-2 col-sm-5 col-xs-10">
                             <h4>MOVIES</h4>
                             <hr>
+                            <p><a href="#featuredMovies" onclick="filterMovAdventure()">Adventure</a></p>
                             <p><a href="#featuredMovies" onclick="filterMovComedy()">Comedy</a></p>
                             <p><a href="#featuredMovies" onclick="filterMovDrama()">Drama</a></p>
-                            <p><a href="#featuredMovies" onclick="filterMovAdventure()">Adventure</a></p>
-                            <p><a href="#featuredMovies" onclick="filterMovThriller()">Thriller</a></p>
-                            <p><a href="#featuredMovies" onclick="filterMovFantasy()">Fantasy</a></p>
                             <p><a href="#featuredMovies" onclick="filterMovSciFi()">Sci-Fi</a></p>
+                            <p><a href="#featuredMovies" onclick="filterMovThriller()">Thriller</a></p>
+                            <!--<p><a href="#featuredMovies" onclick="filterMovFantasy()">Fantasy</a></p>-->
                             <br><br>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-5 col-xs-10">
@@ -1666,40 +1881,47 @@
                             <h4>LATEST MOVIES</h4>
                             <hr>
                             <div class="row">
-                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 vidStart">
-                                    <img class="img-responsive" src="assets/img/vidstart.png" alt="">
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                    <div class="bg-dark mb-2" style="width:100%;height:50px;"></div>
                                 </div>
-                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 vidStart">
-                                    <p>Le Pull de ma Soeur</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 vidStart">
-                                    <img class="img-responsive" src="assets/img/vidstart.png" alt="">
-                                </div>
-                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 vidStart">
-                                    <p>Le Châpeau de ma Mère</p>
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                                    <p>Visita  Interiora</p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 vidStart">
-                                    <img class="img-responsive" src="assets/img/vidstart.png" alt="">
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                    <div class="bg-dark mb-2" style="width:100%;height:50px;"></div>
                                 </div>
-                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 vidStart">
-                                    <p>Le Slip du Voisin</p>
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                                    <p>Terrae Rectificando</p>
                                 </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                    <div class="bg-dark mb-2" style="width:100%;height:50px;"></div>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                                    <p>Invenies Occultum</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                        <div class="bg-dark mb-2" style="width:100%;height:50px;"></div>
+                                    </div>
+                                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                                        <p>Lapidem</p>
+                                    </div>
                             </div>
                             <br><br>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-5 col-xs-10">
                             <h4 class="allez"><span class="cRouge">ALLEZ</span><span class="cBlanc">CINE!</span></h4>
                             <hr>
-                            <img class="minimage" src="assets/img/poster_donnie.jpg" alt="">
-                            <img class="minimage" src="assets/img/poster_blade.jpg" alt="">
-                            <img class="minimage" src="assets/img/poster_dasboot.jpg" alt="">
-                            <img class="minimage" src="assets/img/poster_sunshine.jpg" alt="">
-                            <img class="minimage" src="assets/img/poster_captain.jpg" alt="">
-                            <img class="minimage" src="assets/img/poster_reservoir.jpg" alt="">
+                            <img class="minimage" src="images/The_Witch-2016-Thriller.jpg" alt="The Witch">
+                            <img class="minimage" src="images/OldBoy-2003-thriller.jpg" alt="Old Boy">
+                            <img class="minimage" src="images/La_Classe_americaine-1993-comedie.png" alt="La Classe Américaine">
+                            <img class="minimage" src="images/WrongCops-2013-comedie.jpg" alt="Wrong Cops">
+                            <img class="minimage" src="images/Prometheus-2012-scifi.jpg" alt="Prometheus">
+                            <img class="minimage" src="images/Chappie-2015-scifi.jpg" alt="Chappie">
                             <br><br>
                         </div>
                         <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12"></div>
@@ -1724,16 +1946,16 @@
 
 
   <script src="https://use.fontawesome.com/be3ae42918.js"></script>
-  <script type="text/javascript" src="assets/js/acceptation.cookie.js"></script>
-  <script type="text/javascript" src="assets/js/videoStop.js"></script>
-  <script type="text/javascript" src="assets/js/shop.js"></script>
-  <script type="text/javascript" src="assets/js/wwidth.js"></script>
-  <script type="text/javascript" src="assets/js/filters.js"></script>
-  <script type="text/javascript" src="assets/js/filtersBis.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.cookie.js"></script>
-  <script type="text/javascript" src="assets/js/18.js"></script>
-  <script type="text/javascript" src="assets/js/bouton.js"></script>
+  <script type="text/javascript" src="js/acceptation.cookie.js"></script>
+  <script type="text/javascript" src="js/videoStop.js"></script>
+  <script type="text/javascript" src="js/shop.js"></script>
+  <script type="text/javascript" src="js/wwidth.js"></script>
+  <script type="text/javascript" src="js/filters.js"></script>
+  <script type="text/javascript" src="js/filtersBis.js"></script>
+  <script type="text/javascript" src="js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="js/age.js"></script>
+  <script type="text/javascript" src="js/bouton.js"></script>
 
-            </body>
+  </body>
 
-            </html>
+</html>
