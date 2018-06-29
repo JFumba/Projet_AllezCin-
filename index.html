@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ALLEZCINE!</title>
+
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" href="images/favicon.ico">
+
+
+    <!-- pop up age
+  <script language="javascript">
+    var agePrompt=prompt("Quel age avez-vous?");
+
+    if (agePrompt>=18) alert('Bienvenue!')
+    else {
+    alert('Désolé, vous êtes trop jeune')
+    document.location="https://www.imdb.com/";
+
+
+    }
+    </script>
+      -->
+</head>
+<body>
+    <header class="container-fluid">
+      <div class="bs-example">
+        <nav id="myNavbar" class="navbar navbar-default" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="container-fluid header">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#"><p id="allez">ALLEZ</p><p id="cine">CINE!</p></a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                      <li><a href="#">Home</a></li>
+                      <!--<li><a href="#">Profile</a></li>-->
+                      <li class="dropdown">
+                          <a href="#" data-toggle="dropdown" class="dropdown-toggle">Genre<b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="#">All</a></li>
+                              <li><a href="#">comédie</a></li>
+                              <li><a href="#">thriller</a></li>
+                              <li><a href="#">scifi</a></li>
+                              <li><a href="#">dramatique</a></li>
+                              <li><a href="#">aventure</a></li>
+                              <!--<li class="divider"></li>
+                              <li><a href="#">Trash</a></li>-->
+                          </ul>
+                      </li>
+                      <li id="contact"><a href="#contactForm">Contact</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                      <!--<li class="dropdown">
+                          <a href="#" data-toggle="dropdown" class="dropdown-toggle">Admin <b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">Settings</a></li>
+                          </ul>
+                      </li>-->
+                      <li><div class="search-container">
+                        <!--<form action="/action_page.php">-->
+                          <input type="text" placeholder="Search.." name="search">
+                          <button type="submit"><i class="fas fa-search"></i></button>
+                        <!--</form>-->
+                      </div>
+                    </li>
+                  </ul>
+              </div><!-- /.navbar-collapse -->
+          </div>
+      </nav>
+  </div>
+    <div class="container-fluid">
+
+
+      <div class="row">
+        <div class="col-lg-12">
+
+        </div>
+      </div>
+
+      <div class="row">
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="images/inception-2010-scifi.jpg" alt="Inception" style="width:100%;">
+                    <div class="carousel-caption">
+                      <h1>Inception</h1>
+                    </div>
+                </div>
+                <div class="item">
+                  <img src="images/intouchables-2011-comedie.jpg" alt="Intouchables" style="width:100%;">
+                    <div class="carousel-caption">
+                      <h1>Intouchable</h1>
+                    </div>
+                </div>
+                <div class="item">
+                  <img src="images/seven-1995-thriller.jpg" alt="Seven" style="width:100%;">
+                    <div class="carousel-caption">
+                      <h1>Seven</h1>
+                    </div>
+                </div>
+              </div>
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+      </div>
+
+    </header>
+
+    <section class="container">
+
+      <div class="row">
+
+          <div class="col-lg-3"></div>
+          <div class="col-lg-3">
+
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+          </div>
+          <div class="col-lg-3">
+                    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+
+                    <div id="id02" class="modal">
+                      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <form class="modal-content" action="/action_page.php">
+                        <div class="container">
+                          <h1>Sign Up</h1>
+                          <p>Please fill in this form to create an account.</p>
+                          <hr>
+                          <label for="email"><b>Email</b></label>
+                          <input type="text" placeholder="Enter Email" name="email" required>
+
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" placeholder="Enter Password" name="psw" required>
+
+                          <label for="psw-repeat"><b>Repeat Password</b></label>
+                          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                          <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                          </label>
+
+                          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                          <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="submit" class="signupbtn">Sign Up</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+          </div>
+          <div class="col-lg-3"></div>
+
+      </div>
+
+          <div class="row">
+
+            <!--  <div class="col-lg-2">2 colonnes -->
+
+                <ul id="menu">
+                  <li><a href="https://twitter.com/?lang=fr" class="fa fa-twitter"></a></li>
+                  <li><a href="https://fr-fr.facebook.com/" class="fa fa-facebook"></a></li>
+                  <li><a href="https://dribbble.com/" class="fa fa-dribbble"></a></li>
+                  <li><a href="https://plus.google.com/?hl=fr" class="fa fa-google"></a></li>
+                </ul>
+
+              </div>
+
+                <div class="col-lg-12">
+
+                    <section class="row">
+                      <div class="col-xs-3 col-sm-3 col-md-3"><img src="images/batmanmovie-2017-comedie.jpg"  class="cadre" data-toggle="modal" data-target="#exampleModal"><br>
+                          <p>Batman</p>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <p>2017</p>
+                            </div>
+                            <div class="col-sm-6">
+                              <p>Comédie</p>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="col-xs-3 col-sm-3 col-md-3"><img src="images/thefall-2006-dramatique.jpg" class="cadre" data-toggle="modal" data-target="#example2Modal"><br>
+
+                        <p>The Fall</p>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <p>2006</p>
+                          </div>
+                          <div class="col-sm-6">
+                            <p>Dramatique</p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="col-xs-3 col-sm-3 col-md-3"><img src="images/lesdeuxtours-2002-aventure.jpg" class="cadre" data-toggle="modal" data-target="#example3Modal"><br>
+
+                        <p>Les deux tours</p>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <p>2002</p>
+                          </div>
+                          <div class="col-sm-6">
+                            <p>Aventure</p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="col-xs-3 col-sm-3 col-md-3"><img src="images/shutterisland-2010-thriller.jpg" class="cadre" data-toggle="modal" data-target="#example4Modal">
+
+                        <p>Shutter Island</p>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <p>2010</p>
+                          </div>
+                          <div class="col-sm-6">
+                            <p>Thriller</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </section>
+
+                    <div class="row">
+                      <div class="col-lg-12">
+
+                        <section class="row">
+                          <div class="col-lg-12"><h2>Featured Movie</h2></div>
+                        </section>
+
+                        <section class="row">
+                          <div class="col-lg-12">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-primary">All</button>
+                              <button type="button" class="btn btn-primary">Action</button>
+                              <button type="button" class="btn btn-primary">Policier</button>
+                            </div>
+                          </div>
+                        </section>
+
+                        <section class="row">
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/thefall-2006-dramatique.jpg" alt="Tigre"><br>
+                              <p>The Fall</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>2006</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Dramatique</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/hostel-2005-thriller.jpg" alt="Tigre">
+                              <p>Hostel</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>2005</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Thriller</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/inception-2010-scifi.jpg" alt="Tigre">
+                              <p>Inception</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>2010</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Scifi</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/intouchables-2011-comedie.jpg" alt="Tigre">
+                              <p>Intouchable</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>2011</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Comédie</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/lepatientanglais-1996-dramatique.jpg" alt="Tigre">
+                              <p>Le patient anglais</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>1996</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Dramatique</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/lesdeuxtours-2002-aventure.jpg" alt="Tigre">
+                              <p>Les deux tours</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>2002</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Aventure</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/seven-1995-thriller.jpg" alt="Tigre">
+                              <p>Seven</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>1995</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Thriller</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/starwarsempire-1980-scifi.jpg" alt="Tigre">
+                              <p>Star War Empire</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>1980</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>scifi</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/Survivestyle5-2004-comedie.jpg" alt="Tigre">
+                              <p>Survivestyle 5</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>2004</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Comédie</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/swissarmyman-2016-comedie.jpg" alt="Tigre">
+                              <p>Swissarmyman</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>2016</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Comédie</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/WhatWeDoInTheShadows-2014-comedie.jpg" alt="Tigre">
+                              <p>The Shadows</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>2014</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Comédie</p>
+                                </div>
+                              </div>
+
+                          </div>
+                          <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/zoolander-2001-comedie.jpg" alt="Tigre">
+                              <p>Zoolander</p>
+
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p>2001</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <p>Comédie</p>
+                                </div>
+                              </div>
+
+                          </div>
+                        </section>
+
+                        <section class="row">
+                          <div class="col-lg-12">
+                            <button id="Bouton">Plus de film</button>
+                            <div id="tonDiv">
+
+
+
+                              <section class="row">
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/thefall-2006-dramatique.jpg" alt="Tigre"><br>
+                                    <p>The Fall</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>2006</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Dramatique</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/hostel-2005-thriller.jpg" alt="Tigre">
+                                    <p>Hostel</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>2005</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Thriller</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/inception-2010-scifi.jpg" alt="Tigre">
+                                    <p>Inception</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>2010</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Scifi</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/intouchables-2011-comedie.jpg" alt="Tigre">
+                                    <p>Intouchable</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>2011</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Comédie</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/lepatientanglais-1996-dramatique.jpg" alt="Tigre">
+                                    <p>Le patient anglais</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>1996</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Dramatique</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/lesdeuxtours-2002-aventure.jpg" alt="Tigre">
+                                    <p>Les deux tours</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>2002</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Aventure</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/seven-1995-thriller.jpg" alt="Tigre">
+                                    <p>Seven</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>1995</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Thriller</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/starwarsempire-1980-scifi.jpg" alt="Tigre">
+                                    <p>Star War Empire</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>1980</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>scifi</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/Survivestyle5-2004-comedie.jpg" alt="Tigre">
+                                    <p>Survivestyle 5</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>2004</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Comédie</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/swissarmyman-2016-comedie.jpg" alt="Tigre">
+                                    <p>Swissarmyman</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>2016</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Comédie</p>
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/WhatWeDoInTheShadows-2014-comedie.jpg" alt="Tigre">
+                                    <p>The Shadows</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>2014</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Comédie</p>
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/zoolander-2001-comedie.jpg" alt="Tigre">
+                                    <p>Zoolander</p>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <p>2001</p>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <p>Comédie</p>
+                                      </div>
+                                    </div>
+
+                                </div>
+                              </section>
+
+
+
+                            </div>
+                            <script>
+                            document.querySelector("#Bouton").onclick = function() {
+                            if (window.getComputedStyle(document.querySelector('#tonDiv')).display=='none'){
+                            document.querySelector("#tonDiv").style.display="block";
+                            } else {
+                            document.querySelector("#tonDiv").style.display="none";
+                            }
+                            }
+                            </script>
+                          </div>
+                        </section>
+
+                      </div>
+                    </div>
+
+                    <section class="row">
+                      <div class="col-lg-12"><h2>Shop movies</h2></div>
+                    </section>
+
+                    <section class="row">
+                      <div class="col-lg-12">
+
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-primary"><</button>
+                          <button type="button" class="btn btn-primary">></button>
+
+                        </div>
+
+                      </div>
+                    </section>
+
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-8">
+
+                            <section class="row">
+                                <div class="col-xs-6 col-sm-3 col-md-3"><img src="images/thefall-2006-dramatique.jpg" alt="Tigre"></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><img src="images/hostel-2005-thriller.jpg" alt="Tigre"></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><img src="images/inception-2010-scifi.jpg" alt="Tigre"></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><img src="images/intouchables-2011-comedie.jpg" alt="Tigre"></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><img src="images/lepatientanglais-1996-dramatique.jpg" alt="Tigre"></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><img src="images/lesdeuxtours-2002-aventure.jpg" alt="Tigre"></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><img src="images/seven-1995-thriller.jpg" alt="Tigre"></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><img src="images/starwarsempire-1980-scifi.jpg" alt="Tigre"></div>
+                            </section>
+
+                          </div>
+                          <div class="col-lg-4">4 colonnes</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-2"></div>
+                      <div class="col-lg-8">CONTACT US
+                        <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-6" id="contactForm">
+                              <!--<label for="inputEmail4">Email</label>-->
+                              <input type="text" class="form-control" name="firstName" placeholder="FIRST NAME">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <!--<label for="inputPassword4">Password</label>-->
+                              <input type="text" class="form-control" name="lastName" placeholder="LAST NAME">
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <!--<label for="inputEmail4">Email</label>-->
+                                <input type="email" class="form-control" name="email" placeholder="EMAIL">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <!--<label for="inputEmail4">Email</label>-->
+                                <input type="text" class="form-control" name="subject" placeholder="SUBJECT">
+                              </div>
+
+                            </div>
+                            <div class="form-group">
+                              <!--<label for="exampleFormControlTextarea1">Example textarea</label>-->
+                              <textarea class="form-control" name="textArea" placeholder="YOUR MESSAGE" rows="5"></textarea>
+                              <div class="col-auto">
+                                <button type="submit" onclick=onclick="javascript:alert(document.getElementById(‘contactForm’).innerHTML);" class="btn btn-primary mb-2">SEND MESSAGE</button>
+                            </div>
+                          </form>
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1259.111919176352!2d4.348745875992832!3d50.8640556948585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c399f43a2a2d%3A0x4e5710b536c85340!2sAvenue+du+Port+51%2C+1000+Bruxelles!5e0!3m2!1sfr!2sbe!4v1529565608688" width="300" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                      </div>
+
+                    </div>
+
+                </div>
+
+              <!--<div class="col-lg-2">2 colonnes</div> -->
+
+          </div>
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Batman Movie</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe width="554" height="280" src="https://www.youtube.com/embed/9mznUFqFy74?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p>Parvenant toujours à sauver Gotham City des attaques des super-vilains,
+              Batman est devenu arrogant pour mieux cacher sa profonde solitude.
+              Vexé, le Joker se laisse enfermer à l’asile d'Arkham. Mais Batman comme Barbara Gordon,
+               la nouvelle commissaire de la ville, soupçonnent un plan caché. Réaliser par Chris Mckhay,
+               sortie en 2017. Animation, Will Arnet, Michael Cera</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="example2Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="example2ModalLabel">The Fall</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe width="554" height="280" src="https://www.youtube.com/embed/IwsYyRc9j4g?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p>Dans les années 1920, dans un hôpital à Los Angeles,
+              une petite fille prénommée Alexandria qui s'est cassé le bras se lie d'amitié avec le cascadeur Roy Walker qui s'est blessé lors du tournage d'un film.
+              Roy raconte alors une histoire fabuleuse à Alexandria, dont les personnages sont inspirés par les gens de l'entourage :
+              une infirmière, un autre patient, lui-même… Réalisé par Tarsem Singh. Sorti en 2006. Genre dramatique.
+              Lee Pace, Catinca Untaru, et Justine Waddell</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="example3Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="example2ModalLabel">Les deux tours</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe width="554" height="280" src="https://www.youtube.com/embed/c9blKqmyeV4?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p>Après la mort de Boromir et la disparition de Gandalf,
+              la `Communauté' s'est scindée en trois. Perdus dans les collines d'`Emyn Muil',
+              Frodon et Sam découvrent qu'ils sont suivis par Gollum, une créature versatile corrompue par l'anneau magique.
+              Gollum promet de conduire les `Hobbits' jusqu'à la `Porte Noire' du `Mordor'. A travers la `Terre du Milieu',
+              Aragorn, Legolas et Gimli font route vers le `Rohan', le royaume assiégé de Theoden.
+              Réalisé par Peter Jackson. Sorti en 2002. Genre fantastique. Elijah Wood, Sean Astin, Viggo Mortensen, Ian McKellen, Andy Serkis</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2">2 colonnes</div>
+
+
+    <div class="modal fade" id="example4Modal" tabindex="-1" role="dialog" aria-labelledby="example4ModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="example2ModalLabel">Shutter Island</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe width="554" height="280" src="https://www.youtube.com/embed/Hz0ToXuAxag?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p>L'invraisemblable évasion d'une meurtrière rusée amène le marshal Teddy Daniels et son nouveau partenaire à l'hôpital Ashecliffe,
+              un asile psychiatrique situé sur une île lointaine et balayée par les vents.
+              Il apparaît que la femme a disparu d'une chambre fermée à clef et il y a des indices d'actes effroyables commis au sein de l'hôpital.
+              Alors que l'enquête piétine, Teddy réalise qu'il doit faire face à ses propres démons s'il veut quitter l'île en vie.
+             Réalisé par 	Martin Scorsese. sortit en 	2010. Genre	Thriller psychologique.	Leonardo DiCaprio, Mark Ruffalo, Ben Kingsley </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--bouton to top-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+    <!-- footer-->
+    <footer class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">Footer
+
+          </div>
+        </div>
+    </footer>
+
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/text/javascript" src="scripts.js"></script>
+  </body>
+</html>

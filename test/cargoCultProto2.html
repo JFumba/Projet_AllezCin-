@@ -1,0 +1,952 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ALLEZCINE!</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" href="images/favicon-256.png">
+
+
+    <!-- pop up age
+  <script language="javascript">
+    var agePrompt=prompt("Quel age avez-vous?");
+
+    if (agePrompt>=18) alert('Bienvenue!')
+    else {
+    alert('Désolé, vous êtes trop jeune')
+    document.location="https://www.imdb.com/";
+
+
+    }
+    </script>
+      -->
+</head>
+<body>
+
+
+<header>
+  <!-- menu -->
+  <div id="top">
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand icon" href="#"><strong><span class="red">ALLEZ</span>CINE!</strong></a>
+
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-md-auto">
+          <li class="nav-item">
+            <a class="nav-link mr-3" href="#homepage"><span class="red">Home</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres
+            </a>
+           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#featured-movies">All</a>
+                <a class="dropdown-item" href="#featured-movies">comédie</a>
+                <a class="dropdown-item" href="#featured-movies">thriller</a>
+                <a class="dropdown-item" href="#featured-movies">scifi</a>
+                <a class="dropdown-item" href="#featured-movies">dramatique</a>
+                <a class="dropdown-item" href="#featured-movies">aventure</a>
+           </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-2" href="#shop">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline ml-md-auto" action="/action_page.php">
+          <div class="input-group">
+            <input id="search1" class="form-control round-like" type="text" placeholder="Search">
+            <div class="input-group-append">
+              <span class="input-group-text round-like"><i class="fas fa-search"></i></span>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </nav>
+  </div>
+  <!-- jumbo -->
+  <div class="carousel-inner-text position-absolute text-pos text-center">
+    <span class="big">LATEST <span class="red">ON</span>LINE <span class="red">MO</span>VIES</span>
+    <!--<br><span style="opacity:0.7;">In space no one can hear you scream</span>-->
+    <button type="button" name="button" class="btn btn-danger">WATCH TRAILER</button>
+  </div>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- mettre image im1,2,3 dans CSS-->
+        <div class="im1"></div>
+        <div class="carousel-caption">
+          <h1>Intouchable</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="im2"></div>
+        <div class="carousel-caption">
+          <h1>The Witch</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="im3"></div>
+        <div class="carousel-caption">
+          <h1>Inception</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- login -->
+  <div class="redback row">
+    <div class="numero">
+    <p><i class="fas fa-phone"></i> (+000) 009 455 4088</p>
+    </div>
+    <div class="logbut">
+      <button type="button" name="button" id="loginButton" class="btn btn-black rounded-0 pt-0 pb-0" data-toggle="modal" data-target="#modaltest">Login</button>
+      <button type="button" name="button" id="registerButton" class="btn btn-black rounded-0 pt-0 pb-0" data-toggle="modal" data-target="#modaltest2">Register</button>
+    </div>
+  </div>
+</header>
+
+<!--Social Media -->
+<div class="float-sm">
+  <div class="fl-fl float-tw">
+      <a href="" target="_blank">Twitter</a>
+      <i class="fab fa-twitter"></i>
+  </div>
+    <div class="fl-fl float-fb">
+      <a href="" target="_blank">Facebook</a>
+      <i class="fab fa-facebook"></i>
+    </div>
+  <div class="fl-fl float-ig">
+      <a href="" target="_blank">Dribble</a>
+      <i class="fab fa-dribbble"></i>
+    </div>
+    <div class="fl-fl float-gp">
+      <a href="" target="_blank">Google Plus</a>
+      <i class="fab fa-google-plus"></i>
+    </div>
+</div>
+
+<!-- Main movies -->
+<div class="main-movies">
+  <div class="row">
+        <div class="col-md-2-5" id="movie1"
+        ><img src="images/batmanmovie-2017-comedie.jpg" alt="Batman movie 2017" height="200px">
+          <div class="infomovie">
+              <h5>Batman</h5>
+              <p class="left">2017</p>
+              <p class="right">Comédie</p>
+            </div>
+        </div>
+        <div class="col-md-2-5" id="movie2">
+          <img src="images/thefall-2006-dramatique.jpg" alt="The Fall" height="200px" >
+          <div class="infomovie">
+              <h5>The Fall</h5>
+              <p class="left">2006</p>
+              <p class="right">Dramatique</p>
+            </div>
+        </div>
+        <div class="col-md-2-5" id="movie3">
+          <img src="images/lesdeuxtours-2002-aventure.jpg" alt="Les Deux Tours" height="200px">
+          <div class="infomovie">
+              <h5>Les Deux Tours</h5>
+              <p class="left">2002</p>
+              <p class="right">Aventure</p>
+            </div>
+        </div>
+        <div class="col-md-2-5" id="movie4">
+          <img src="images/shutterisland-2010-thriller.jpg" alt="Shutter Island" height="200px">
+          <div class="infomovie">
+              <h5>Shutter Island</h5>
+              <p class="left">2010</p>
+              <p class="right">Thriller</p>
+            </div>
+        </div>
+        <!--<div class="col-md-2-5" id="movie5">
+          <img src="a trouver" alt="Solo Star Wars" height="200px">
+          <div class="infomovie">
+              <h5>a trouver</h5>
+              <p class="left">20xx</p>
+              <p class="right">whateva</p>
+            </div>
+        </div>-->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal videos -->
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+          <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/h6DOpfJzmo0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <p>
+            <i>Parvenant toujours à sauver Gotham City des attaques des super-vilains,
+              Batman est devenu arrogant pour mieux cacher sa profonde solitude.
+              Vexé, le Joker se laisse enfermer à l’asile d'Arkham. Mais Batman comme Barbara Gordon,
+               la nouvelle commissaire de la ville, soupçonnent un plan caché.</i>.
+          </p>
+          <p>Sorti en 2O17</p>
+          <p><b>Genre</b>: animation</p>
+          <p><b>Réalisateur</b>: Chris McKay</p>
+          <p><b>Voix originales</b>: Will Arnet, Michael Cera, Rosario Dawson </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="myModal2" class="modal fade">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+          <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/IwsYyRc9j4g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <p>
+            <i>Dans les années 1920, dans un hôpital à Los Angeles,
+              une petite fille prénommée Alexandria qui s'est cassé le bras se lie d'amitié avec le cascadeur Roy Walker qui s'est blessé lors du tournage d'un film.
+              Roy raconte alors une histoire fabuleuse à Alexandria, dont les personnages sont inspirés par les gens de l'entourage :
+              une infirmière, un autre patient, lui-même….</i>.
+          </p>
+          <p>Sorti en 2OO6</p>
+          <p><b>Genre</b>: dramatique</p>
+          <p><b>Réalisateur</b>: Tarsem Singh</p>
+          <p><b>Acteurs</b>: Lee Pace, Catinca Untaru, et Justine Waddell</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="myModal3" class="modal fade">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+          <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/c9blKqmyeV4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <p>
+            <i>Après la mort de Boromir et la disparition de Gandalf,
+              la `Communauté' s'est scindée en trois. Perdus dans les collines d'`Emyn Muil',
+              Frodon et Sam découvrent qu'ils sont suivis par Gollum, une créature versatile corrompue par l'anneau magique.
+              Gollum promet de conduire les `Hobbits' jusqu'à la `Porte Noire' du `Mordor'. A travers la `Terre du Milieu',
+              Aragorn, Legolas et Gimli font route vers le `Rohan', le royaume assiégé de Theoden.</i>.
+          </p>
+          <p>Sorti en 2OO2</p>
+          <p><b>Genre</b>: fantastique</p>
+          <p><b>Réalisateur</b>: Peter Jackson</p>
+          <p><b>Acteurs</b>: Elijah Wood, Sean Astin, Viggo Mortensen, Ian McKellen, Andy Serkis</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="myModal4" class="modal fade">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+          <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/YDGldPitxic" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <p>
+            <i>L'invraisemblable évasion d'une meurtrière rusée amène le marshal Teddy Daniels et son nouveau partenaire à l'hôpital Ashecliffe,
+              un asile psychiatrique situé sur une île lointaine et balayée par les vents.
+              Il apparaît que la femme a disparu d'une chambre fermée à clef et il y a des indices d'actes effroyables commis au sein de l'hôpital.
+              Alors que l'enquête piétine, Teddy réalise qu'il doit faire face à ses propres démons s'il veut quitter l'île en vie.</i>.
+          </p>
+          <p>Sorti en 2O10</p>
+          <p><b>Genre</b>: thriller psychologique</p>
+          <p><b>Director</b>: Martin Scorsese</p>
+          <p><b>Actors</b>:	Leonardo DiCaprio, Mark Ruffalo, Ben Kingsley </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<div id="myModal5" class="modal fade">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+          <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Cs4y56AnaUg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <p>
+            <i>Debbie Ocean gathers an all-female crew to attempt an impossible heist at New York City's yearly Met Gala.</i>.
+          </p>
+          <p><b>Director</b>: Ron Howard</p>
+          <p><b>Actors</b>: Alden Ehrenreich, Woody Harrelson, Emilia Clarke...</p>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+  <!-- Featured movies -->
+	<section class="featured-movies" id="featured-movies">
+		<div class="title"><h2>Featured Movies</h2></div>
+		<div class="filter btn-group">
+			<button type="button" class="btn btn-danger" id="all">All</button>
+      <button type="button" class="btn btn-danger" id="comedy">Comédie</button>
+			<button type="button" class="btn btn-danger" id="scifi">SciFi</button>
+      <button type="button" class="btn btn-danger" id="drama">Dramatique</button>
+      <button type="button" class="btn btn-danger" id="thriller">Thriller</button>
+      <button type="button" class="btn btn-danger" id="aventure">Aventure</button>
+		</div>
+
+    <!--first row-->
+    <div class="container_movies">
+      <div class="row" id="firstmovie">
+        <div class="col-md-2-5 dramaM">
+          <div class="imgmovie">
+            <img src="images/thefall-2006-dramatique.jpg" alt="The Fall" height="200px">
+            <div class="movieinfo">
+              <h5>The Fall</h5>
+              <p>2006</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2-5 thrillerM">
+          <div class="imgmovie">
+            <img src="images/hostel-2005-thriller.jpg" alt="Hostel" height="200px">
+            <div class="movieinfo">
+                <h5 >Hostel</h5>
+                <p >2005</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2-5 scifiM ">
+          <div class="imgmovie">
+            <img src="images/inception-2010-scifi.jpg" alt="Inception" height="200px">
+            <div class="movieinfo">
+                <h5>Inception</h5>
+                <p>2010</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-2-5 comedyM ">
+          <div class="imgmovie">
+            <img src="images/intouchables-2011-comedie.jpg" alt="Intouchables" height="200px">
+            <div class="movieinfo">
+                <h5>Intouchables</h5>
+                <p>2011</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2-5 comedyM">
+          <div class="imgmovie">
+            <img src="images/snatch-2000-comedie.jpg" alt="Snatch" height="200px">
+            <div class="movieinfo">
+                <h5>Snatch</h5>
+                <p>2000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2-5 comedyM">
+          <div class="imgmovie">
+            <img src="images/LesbianVampireKillers-2009-comedie.jpg" alt="Lesbian Vampire Killers" height="200px">
+            <div class="movieinfo">
+                <h5>Lesbian Vampire Killers</h5>
+                <p>2009</p>
+              </div>
+          </div>
+        </div>
+
+        <!-- Second row -->
+            <div class="col-md-2-5 dramaM">
+              <div class="imgmovie">
+                <img src="images/lepatientanglais-1996-dramatique.jpg" alt="Le patient Anglais" height="200px">
+                <div class="movieinfo">
+                  <h5>Le Patient Anglais</h5>
+                  <p>1996</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-2-5 aventureM">
+            <div class="imgmovie">
+              <img src="images/lesdeuxtours-2002-aventure.jpg" alt="Les Deux Tours" height="200px">
+              <div class="movieinfo">
+                <h5>Les Deux Tours</h5>
+                <p>2002</p>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-2-5 thrillerM">
+              <div class="imgmovie">
+                <img src="images/seven-1995-thriller.jpg" alt="Seven" height="200px">
+                <div class="movieinfo">
+                  <h5>Seven</h5>
+                  <p >1995</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2-5 scifiM">
+              <div class="imgmovie">
+                <img src="images/starwarsempire-1980-scifi.jpg" alt="Star Wars : L'Empire Contre-Attaque" height="200px">
+                <div class="movieinfo">
+                    <h5>Star Wars : L'Empire<br>Contre-Attaque</h5>
+                    <p>1980</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2-5 thrillerM">
+              <div class="imgmovie">
+                <img src="images/DernierTrainPourBusan-2016-thriller.jpg" alt="Dernier Train Pour Busan" height="200px">
+                <div class="movieinfo">
+                    <h5>Dernier Train<br> Pour Busan</h5>
+                    <p>2016</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2-5 scifiM">
+              <div class="imgmovie">
+                <img src="images/Prometheus-2012-scifi.jpg" alt="Prometheus" height="200px">
+                <div class="movieinfo">
+                    <h5>Prometheus</h5>
+                    <p>2012</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="btn-container">
+          <button type="button" class="btn btn-danger btnplus" id="moreMovies">PLUS DE FILMS</button>
+        </div>
+
+        <!-- More movies when clicking the button -->
+      	<div class="row collapse" id="collapseMore">
+      		<div class="row" id="firsttvshow">
+      				<div class="col-md-2-5 comedyM">
+      					<img src="images/Survivestyle5-2004-comedie.jpg" alt="Survivestyle 5" height="200px">
+      					<div class="movieinfo">
+      						<h5>Survivestyle 5</h5>
+      						<p>2004</p>
+      					</div>
+      				</div>
+      				<div class="col-md-2-5 comedyM">
+      					<img src="images/swissarmyman-2016-comedie.jpg" alt="Swiss Army Man" height="200px">
+      					<div class="movieinfo">
+      						<h5>Swiss Army Man</h5>
+      						<p>2016</p>
+      					</div>
+      				</div>
+      				<div class="col-md-2-5 comedyM">
+      					<img src="images/WhatWeDoInTheShadows-2014-comedie.jpg" alt="What We Do In The Shadows" height="200px">
+      					<div class="movieinfo">
+      						<h5>What We Do In The Shadows</h5>
+      						<p>2014</p>
+      					</div>
+      				</div>
+      				<div class="col-md-2-5 comedyM">
+      					<img src="images/zoolander-2001-comedie.jpg" alt="Zoolander" height="200px">
+      					<div class="movieinfo">
+      						<h5>Zoolander</h5>
+      						<p>2001</p>
+      					</div>
+      				</div>
+      				<!--<div class="col-md-2-5 thrillerM">
+      					<img src="images/TheLastGirl-2017-thriller.jpg" alt="The Last Girl" height="200px">
+      					<div class="movieinfo">
+      						<h5>The Last Girl</h5>
+      						<p>2017</p>
+      					</div>
+      				</div>
+      				<div class="col-md-2-5 scifiM">
+      					<img src="images/chappie-2015-scifi.jpg" alt="Chappie" height="200px">
+      					<div class="movieinfo">
+      						<h5>Chappie</h5>
+      						<p>2015</p>
+      					</div>
+      				</div>-->
+      			</div>
+      		</div>
+      </section>
+
+      <!-- Shop Movies -->
+      <div class="shopmovies-container">
+        <div class="title" id="shop-movies"><h2>Shop Movies</h2></div>
+        <div class="row mainrow">
+          <div class="col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+            <div class="row">
+              <div class="col-md-2-5" id="card-shopmovies">
+                <img src="images/thefall-2006-dramatique.jpg" alt="The Fall" height="200px">
+                <div class="shopinfo">
+                    <h5>The Fall</h5>
+                    <p class="left">10€</p>
+                    <p class="right">2006</p>
+                  </div>
+              </div>
+              <div class="col-md-2-5">
+                <img src="images/hostel-2005-thriller.jpg" alt="Hostel" height="200px">
+                <div class="shopinfo">
+                    <h5>Hostel</h5>
+                    <p class="left">10€</p>
+                    <p class="right">2005</p>
+                  </div>
+              </div>
+              <div class="col-md-2-5">
+                <img src="images/inception-2010-scifi.jpg" alt="Inception" height="200px">
+                <div class="shopinfo">
+                    <h5>Inception</h5>
+                    <p class="left">13€</p>
+                    <p class="right">2010</p>
+                  </div>
+              </div>
+              <div class="col-md-2-5">
+                <img src="images/intouchables-2011-comedie.jpg" alt="Intouchables" height="200px">
+                <div class="shopinfo">
+                    <h5>Intouchables</h5>
+                    <p class="left">13€</p>
+                    <p class="right">2011</p>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2-5" id="card-shopmovies">
+                <img src="images/lepatientanglais-1996-dramatique.jpg" alt="Le Patient Anglais" height="200px">
+                <div class="shopinfo">
+                    <h5>Le Patient Anglais</h5>
+                    <p class="left">3€</p>
+                    <p class="right">1996</p>
+                  </div>
+              </div>
+              <div class="col-md-2-5">
+                <img src="images/lesdeuxtours-2002-aventure.jpg" alt="Les Deux Tours" height="200px">
+                <div class="shopinfo">
+                    <h5>Les Deux Tours</h5>
+                    <p class="left">7€</p>
+                    <p class="right">2002</p>
+                  </div>
+              </div>
+              <div class="col-md-2-5">
+                <img src="images/seven-1995-thriller.jpg" alt="Seven" height="200px">
+                <div class="shopinfo">
+                    <h5>Seven</h5>
+                    <p class="left">3€</p>
+                    <p class="right">1995</p>
+                  </div>
+              </div>
+              <div class="col-md-2-5">
+                <img src="images/starwarsempire-1980-scifi.jpg" alt="Star Wars : Episode V - L'Empire Contre-Attaque" height="200px">
+                <div class="shopinfo">
+                    <h5>Star Wars : L'Empire<br>Contre-Attaque</h5>
+                    <p class="left">1€</p>
+                    <p class="right">1980</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5" id="trailer-box">
+            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+              <div class="btn-group small-arrows" role="group" aria-label="Small Arrows">
+                <button type="button" href="#multi-item-example" class="btn btn-dark btn-sm" id="previous" data-slide="prev"><</button>
+                <button type="button" href="#multi-item-example" class="btn btn-dark btn-sm" id="next" data-slide="next">></button>
+              </div>
+              <!-- First trailer -->
+              <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                      <div class="card bg-dark mb-3 trailer-container" id="trailer1">
+                      <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/IwsYyRc9j4g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                      <div class="card-body card-trailer">
+                        <p class="card-title">The Fall</p>
+                        <p class="card-text">Synopsis: <em>Dans les années 1920, dans un hôpital à Los Angeles,
+                          une petite fille prénommée Alexandria qui s'est cassé le bras se lie d'amitié avec le cascadeur Roy Walker qui s'est blessé lors du tournage d'un film.
+                          Roy raconte alors une histoire fabuleuse à Alexandria, dont les personnages sont inspirés par les gens de l'entourage :
+                          une infirmière, un autre patient, lui-même… </em></p>
+                        <p class="card-text">Sorti en <em>2016</em></p>
+                        <p class="card-text">Genre: <em>dramatique</em></p>
+                        <p class="card-text">Prix: <em>10€</em></p>
+                      </div>
+                  </div>
+                </div>
+                <!-- Second trailer -->
+                    <div class="carousel-item">
+                  <div class="card bg-dark mb-3 trailer-container" id="trailer2">
+                      <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/6lFWAMCbTBM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                      <div class="card-body card-trailer">
+                        <p class="card-title">Hostel</p>
+                        <p class="card-text"><strong>INTERDIT AUX MOINS DE 16 ANS</strong></p>
+                        <p class="card-text">Synopsis: <em>Deux étudiants américains, Paxton et Josh, ont décidé de découvrir l'Europe avec un maximum d'aventures et de sensations fortes. Avec Oli, un Islandais qu'ils ont rencontré en chemin, ils se retrouvent dans une petite ville de Slovaquie dans ce qu'on leur a décrit comme le nirvana des vacances de débauche : une propriété très spéciale, pleine de filles aussi belles que faciles...
+                          Natalya et Svetlana sont effectivement très cools... un peu trop, même. Paxton et Josh vont vite se rendre compte qu'ils sont tombés dans un piège. Ce voyage-là va les conduire au bout de l'horreur...</em></p>
+                        <p class="card-text">Sorti en <em>2005</em></p>
+                        <p class="card-text">Genre: <em>Thriller</em></p>
+                        <p class="card-text">Prix: <em>10€</em></p>
+                      </div>
+                  </div>
+                </div>
+                <!-- Third trailer -->
+                    <div class="carousel-item">
+                  <div class="card bg-dark mb-3 trailer-container" id="trailer3">
+                      <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/YoHD9XEInc0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                      <div class="card-body card-trailer">
+                        <p class="card-title">Inception</p>
+                        <p class="card-text">Synopsis: <em>Dom Cobb est un voleur expérimenté – le meilleur qui soit dans l’art périlleux de l’extraction : sa spécialité consiste à s’approprier les secrets les plus précieux d’un individu, enfouis au plus profond de son subconscient, pendant qu’il rêve et que son esprit est particulièrement vulnérable. Très recherché pour ses talents dans l’univers trouble de l’espionnage industriel, Cobb est aussi devenu un fugitif traqué dans le monde entier qui a perdu tout ce qui lui est cher. Mais une ultime mission pourrait lui permettre de retrouver sa vie d’avant – à condition qu’il puisse accomplir l’impossible : l’inception.</em></p>
+                        <p class="card-text">Sorti en <em>2010</em></p>
+                        <p class="card-text">Genre: <em>Scifi</em></p>
+                        <p class="card-text">Prix: <em>13€</em></p>
+                      </div>
+                  </div>
+                </div>
+                <!-- Fourth trailer -->
+                    <div class="carousel-item">
+                  <div class="card bg-dark mb-3 trailer-container" id="trailer4">
+                      <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/34WIbmXkewU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                      <div class="card-body card-trailer">
+                        <p class="card-title">Intouchables</p>
+                        <p class="card-text">Synopsis: <em>A la suite d’un accident de parapente, Philippe, riche aristocrate, engage comme aide à domicile Driss, un jeune de banlieue tout juste sorti de prison. Bref la personne la moins adaptée pour le job. Ensemble ils vont faire cohabiter Vivaldi et Earth Wind and Fire, le verbe et la vanne, les costumes et les bas de survêtement... Deux univers vont se télescoper, s’apprivoiser, pour donner naissance à une amitié aussi dingue, drôle et forte qu’inattendue, une relation unique qui fera des étincelles et qui les rendra... Intouchables.</em></p>
+                        <p class="card-text">Sorti en <em>2011</em></p>
+                        <p class="card-text">Genre: <em>Comédie</em></p>
+                        <p class="card-text">Prix: <em>13€</em></p>
+                      </div>
+                  </div>
+                </div>
+                <!-- Fifth trailer -->
+                  <div class="carousel-item">
+                  <div class="card bg-dark mb-3 trailer-container" id="trailer5">
+                      <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/c09xx1dlkBI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                      <div class="card-body card-trailer">
+                        <p class="card-title">Le Patient Anglais</p>
+                        <p class="card-text">Synopsis: <em>En 1945, quatre personnes dechirées par la guerre se réfugient dans un monastère abandonné de Toscane pour se guérir de leurs maux. Peu à peu le passé va resurgir et la présence d'un homme mystérieux et méconnaissable, le patient anglais, va bouleverser le destin de ceux qui croisent son chemin.</em></p>
+                        <p class="card-text">Sorti en <em>1996</em></p>
+                        <p class="card-text">Genre: <em>Dramatique</em></p>
+                        <p class="card-text">Price: <em>3€</em></p>
+                      </div>
+                  </div>
+                </div>
+                <!-- Sixth trailer -->
+                  <div class="carousel-item">
+                  <div class="card bg-dark mb-3 trailer-container" id="trailer6">
+                      <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/c9blKqmyeV4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body card-trailer">
+                      <p class="card-title">Les Deux Tours</p>
+                      <p class="card-text">Synopsis: <em>Après la mort de Boromir et la disparition de Gandalf,
+                        la `Communauté' s'est scindée en trois. Perdus dans les collines d'`Emyn Muil',
+                        Frodon et Sam découvrent qu'ils sont suivis par Gollum, une créature versatile corrompue par l'anneau magique.
+                        Gollum promet de conduire les `Hobbits' jusqu'à la `Porte Noire' du `Mordor'. A travers la `Terre du Milieu',
+                        Aragorn, Legolas et Gimli font route vers le `Rohan', le royaume assiégé de Theoden.</em></p>
+                      <p class="card-text">Sorti en <em>2002</em></p>
+                      <p class="card-text">Genre: <em>Aventure</em></p>
+                      <p class="card-text">Prix: <em>7€</em></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Seventh trailer -->
+                <div class="carousel-item">
+                  <div class="card bg-dark mb-3 trailer-container" id="trailer7">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/znmZoVkCjpI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body card-trailer">
+                      <p class="card-title">Seven</p>
+                      <p class="card-text">Synopsis: <em>Pour conclure sa carrière, l'inspecteur Somerset, vieux flic blasé, tombe à sept jours de la retraite sur un criminel peu ordinaire. John Doe, c'est ainsi que se fait appeler l'assassin, a decidé de nettoyer la societé des maux qui la rongent en commettant sept meurtres basés sur les sept pechés capitaux: la gourmandise, l'avarice, la paresse, l'orgueil, la luxure, l'envie et la colère.</em></p>
+                      <p class="card-text">Sorti en <em>1995</em></p>
+                      <p class="card-text">Genre: <em>Thriller</em></p>
+                      <p class="card-text">Prix: <em>3€</em></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Eighth trailer -->
+                    <div class="carousel-item">
+                  <div class="card bg-dark mb-3 trailer-container" id="trailer8">
+                      <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/JNwNXF9Y6kY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                      <div class="card-body card-trailer">
+                        <p class="card-title">STAR WARS : EPISODE V - L'EMPIRE CONTRE-ATTAQUE</p>
+                        <p class="card-text">Synopsis: <em>Malgré la destruction de l'Etoile Noire, l'Empire maintient son emprise sur la galaxie, et poursuit sans relâche sa lutte contre l'Alliance rebelle. Basés sur la planète glacée de Hoth, les rebelles essuient un assaut des troupes impériales. Parvenus à s'échapper, la princesse Leia, Han Solo, Chewbacca et C-3P0 se dirigent vers Bespin, la cité des nuages gouvernée par Lando Calrissian, ancien compagnon de Han. Suivant les instructions d'Obi-Wan Kenobi, Luke Skywalker se rend quant à lui vers le système de Dagobah, planète marécageuse où il doit recevoir l'enseignement du dernier maître Jedi, Yoda. Apprenant l'arrestation de ses compagnons par les stormtroopers de Dark Vador après la trahison de Lando, Luke décide d'interrompre son entraînement pour porter secours à ses amis et affronter le sombre seigneur Sith...</em></p>
+                        <p class="card-text">Sorti en <em>1980</em></p>
+                        <p class="card-text">Genre: <em>Scifi</em></p>
+                        <p class="card-text">Prix: <em>1€</em></p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="contact-container">
+        <div class="title" id="contact"><h2>Contact us</h2></div>
+        <div class="full-form">
+          <form>
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control"  id="firstname" placeholder="First name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" id="lastname" placeholder="Last name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" id="subject"placeholder="Subject">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control form-message" id="message"placeholder="Your message">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-danger" id="sendmsg" onclick="myfunction()">Send message</button>
+          </form>
+        </div>
+      </div>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-dark">
+        <div class="red text-center">
+          Suscribe to us
+        </div>
+        <div class="text-center">
+          <input type="text" name="" value="" placeholder="Enter your email...">
+          <button type="button" name="button">SUBSCRIBE</button>
+        </div>
+        <div class="container-fluid">
+          <div class="row mt-2">
+            <div class="col">
+              RELEASE
+              <hr>
+              <ol>
+                <li>2016</li>
+                <li>2015</li>
+                <li>2014</li>
+                <li>2013</li>
+                <li>2012</li>
+                <li>2011</li>
+              </ol>
+            </div>
+            <div class="col">
+              MOVIES
+              <hr>
+              <ol>
+                <li>ADVENTURE</li>
+                <li>COMEDY</li>
+                <li>FANTASY</li>
+                <li>ACTION</li>
+                <li>MOVIES</li>
+                <li>HORROR</li>
+            </div>
+            <div class="col">
+              REVIEW MOVIES
+              <hr>
+              <div class="d-flex flex-container">
+                <div class="bg-dark pl-1 pr-1 m-1">Comedy</div>
+                <div class="bg-dark pl-1 pr-1 m-1">Horror</div>
+                <div class="bg-dark pl-1 pr-1 m-1">Historical</div>
+                <div class="bg-dark pl-1 pr-1 m-1">Romantic</div>
+                <div class="bg-dark pl-1 pr-1 m-1">Love</div>
+                <div class="bg-dark pl-1 pr-1 m-1">Action</div>
+                <div class="bg-dark pl-1 pr-1 m-1">Reviews</div>
+                <div class="bg-dark pl-1 pr-1 m-1">Comedy</div>
+                <div class="bg-dark pl-1 pr-1 m-1">Horror</div>
+                <div class="bg-dark pl-1 pr-1 m-1">Historical</div>
+                <div class="bg-dark pl-1 pr-1 m-1">Romantic</div>
+                <div class="bg-dark pl-1 pr-1 m-1">Love</div>
+                <div class="bg-dark pl-1 pr-1 m-1">Comedy</div>
+                <div class="bg-dark pl-1 pr-1 m-1">Horror</div>
+                <div class="bg-dark pl-1 pr-1 m-1">Historical</div>
+              </div>
+            </div>
+            <div class="col">
+              LATEST MOVIES
+              <hr>
+              <div class="row">
+                <div class="col">
+                  <div class="bg-dark mb-2" style="width:100%;height:50px;"></div>
+                </div>
+                <div class="col">
+                  Visita  Interiora
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="bg-dark mb-2" style="width:100%;height:50px;"></div>
+                </div>
+                <div class="col">
+                  Terrae Rectificando
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="bg-dark mb-2" style="width:100%;height:50px;"></div>
+                </div>
+                <div class="col">
+                  Invenies Occultum
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="bg-dark mb-2" style="width:100%;height:50px;"></div>
+                </div>
+                <div class="col">
+                  Lapidem
+                </div>
+              </div>
+            </div>
+            <div class="col mr-4">
+              <span class="red">ALLEZ</span>CINE!
+              <hr>
+              <div class="row">
+                <div class="col-4" style="background-image:url(images/thewitch-2015.jpg);background-size:cover;width:100%;height:100px;">
+                </div>
+                <div class="col-4" style="background-image:url(images/oldboy-2003.jpg);background-size:cover;width:100%;height:100px;">
+                </div>
+                <div class="col-4" style="background-image:url(images/ghost-1995.jpg);background-size:cover;width:100%;height:100px;">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4" style="background-image:url(images/akira-1988.jpg);background-size:cover;width:100%;height:100px;">
+                </div>
+                <div class="col-4" style="background-image:url(images/blade-1998.jpg);background-size:cover;width:100%;height:100px;">
+                </div>
+                <div class="col-4" style="background-image:url(images/rocknrolla-2008.jpg);background-size:cover;width:100%;height:100px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <hr>
+        <!-- Social media -->
+  			<div class="connect" id="socialmediaconnect">
+  				<p>Connect with us</p>
+  				<div class="connect-socialmedia">
+  					<a href="" class="border border-white fab fa-twitter" target="_blank"></a>
+  					<a href="" class="border border-white fab fa-facebook" target="_blank"></a>
+  					<a href="" class="border border-white fab fa-dribbble" target="_blank"></a>
+  					<a href="" class="border border-white fab fa-youtube-square" target="_blank"></a>
+  					<a href="" class="border border-white fab fa-google-plus" target="_blank"></a>
+  				</div>
+  			</div>
+        <div class="modal" id="modaltest">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <form action=>
+                  <div class="form-group">
+                    <label for="login">Login</label>
+                    <input type="text" class="form-control" id="login">
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <div class="input-group">
+                      <input type="password" class="form-control" id="pwd">
+                      <div class="input-group-append">
+                        <button type="button" name="button" id="test">Forgotten Password ?</button>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" name="button" id="loginRegister">Register</button>
+                  <button type="button" name="button" class="vanish">Connect</button>
+                  <button type="button" name="button" class="vanish">Cancel</button>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">Remember me</label>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modaltest2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <form action=>
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="passwd">Password:</label>
+                    <input type="password" class="form-control" id="passwd">
+                  </div>
+                  <div class="form-group">
+                    <label for="pwdconf">Confirm Password:</label>
+                    <input type="password" class="form-control" id="pwdconf">
+                  </div>
+                  <div class="form-group form-check">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">Terms of service</label>
+                    </div>
+                  </div>
+                  <button type="button" name="button" class="vanish2">Register</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+  		</footer>
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+      <script src="script.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+      <script>
+      window.addEventListener("load", function(){
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#000"
+          },
+          "button": {
+            "background": "#ff0000"
+          }
+        }
+      })});
+      </script>
+    </body>
+    </html>

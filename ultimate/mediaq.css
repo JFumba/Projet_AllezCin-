@@ -1,0 +1,127 @@
+@media(max-width:767px){
+    .navbar-nav {
+        font-size: 14px !important;
+    }
+    .navbar-inverse {
+        background-color: #333333;
+        border-color: black !important;
+    }
+    .carousel-caption h2{
+        font-size: 20px;
+    }
+    .carousel-caption p{
+        font-size: 12px;
+        display: none;
+    }
+    .film .aleft{
+        display: none;
+    }
+    .film .aright{
+        display: none;
+    }
+    .titreFilm{
+        padding-bottom: 15px;
+    }
+    .contact .cUs .right{
+        padding-left: 0;
+    }
+    .contact .cUs .left{
+        padding-right: 0;
+    }
+    .contact .gMap{
+        padding-left: 0;
+    }
+}
+@media(min-width:768px){
+    .navbar-nav {
+        font-size: 14px !important;
+    }
+    .feat{
+        display: none;
+    }
+    .carousel-caption h2{
+        font-size: 24px;
+    }
+    .carousel-caption p{
+        font-size: 14px;
+    }
+    .laDivABibi{
+        height: 0px;
+        display: none;
+    }
+    .film .aleft{
+        display: none;
+    }
+    .film .aright{
+        display: none;
+    }
+    .titreFilm{
+        padding-bottom: 10px;
+    }
+    .contact .cUs .right{
+        padding-left: 0;
+    }
+    .contact .cUs .left{
+        padding-right: 0;
+    }
+}
+@media(min-width:992px){
+    .navbar-nav {
+        font-size: 16px !important;
+    }
+    .feat{
+        display: none;
+    }
+    .carousel-caption h2{
+        font-size: 30px;
+    }
+    .carousel-caption p{
+        font-size: 16px;
+    }
+    .laDivABibi{
+        height: 0px;
+        display: none;
+    }
+    .film .aleft{
+        display: block;
+    }
+    .film .aright{
+        display: block;
+    }
+    .contact .cUs .right{
+        padding-left: 5px;
+    }
+    .contact .cUs .left{
+        padding-right: 5px;
+    }
+}
+@media(min-width:1200px){
+    .navbar-nav {
+        font-size: 17px !important;
+    }
+    .feat{
+        display: inline;
+    }
+    .carousel-caption h2{
+        font-size: 36px;
+    }
+    .carousel-caption p{
+        font-size: 20px;
+    }
+    .laDivABibi{
+        height: 0px;
+        display: none;
+    }
+    .film .aleft{
+        display: block;
+    }
+    .film .aright{
+        display: block;
+    }
+    .contact .cUs .right{
+        padding-left: 5px;
+    }
+    .contact .cUs .left{
+        padding-right: 5px;
+    }
+}
