@@ -1,4 +1,4 @@
-var agePrompt=prompt("To enter this website you must be at least 18 years old \nPlease enter your age");
+/*var agePrompt=prompt("To enter this website you must be at least 18 years old \nPlease enter your age");
 
 if (agePrompt>=18) alert('Welcome!')
 else {
@@ -7,3 +7,4 @@ document.location="https://www.imdb.com/";
 
 
 }
+*/
