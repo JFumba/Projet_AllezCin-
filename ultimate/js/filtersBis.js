@@ -23,7 +23,7 @@ function toggleSeries(){
     }
 };
 
-var viewFantasy = document.getElementById("viewFantasy");
+
 var viewComedy = document.getElementById("viewComedy");
 var viewDrama = document.getElementById("viewDrama");
 var viewThriller = document.getElementById("viewThriller");

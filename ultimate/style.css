@@ -141,7 +141,9 @@ ol.carousel-indicators {
     height: 5px !important;
     margin: 10px !important;
 }
-
+/*.carousel-inner{
+  height: 800px;
+}*/
 /* RED BANNER */
 .redBan{
     width: 100%;
@@ -478,7 +480,8 @@ section h3{
     color: #474444;
 }
 .footer .minimage{
-    width: 60px;
+  width: 30%;
+  height: 30%;
 }
 .footer button {
     border: none;
@@ -567,61 +570,3 @@ div.cookie_policy_msg>div>a:last-child{
 	z-index: 100;
   right: 0px;
 }
-
-/* AGE MODAL
-.content {
-    display: none;
-}
-.agemodal {
-    display: none;
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-}
-.agemodal .overlay {
-    background-color: #000;
-    height: 100%;
-    opacity: 0.5;
-    position: relative;
-    width: 100%;
-    z-index: 100;
-}
-.agemodal .message {
-    text-align: center;
-    border: 1px solid #333;
-    background: #f3f3f3;
-    bottom: 0;
-    -webkit-box-shadow: 12px 12px 10px 1px rgba(0,0,0,0.6);
-    -moz-box-shadow: 12px 12px 10px 1px rgba(0,0,0,0.6);
-    box-shadow: 12px 12px 10px 1px rgba(0,0,0,0.6);
-    height: 200px; /* Note: this has to be a set width
-    left: 0;
-    margin: auto;
-    padding: 10px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 400px; /* Note: this has to be a set height
-    z-index: 101;
-}
-.formsubmit {
-    border:none;
-    background-color: #FF0031;
-    padding: 8px;
-    margin-right: 10px;
-    color: white;
-    min-width: 80px;
-    margin-bottom: 10px;
-}
-.formsubmit:hover {
-    border:none;
-    padding: 8px;
-    margin-right: 10px;
-    color: white;
-    min-width: 80px;
-    margin-bottom: 10px;
-    text-decoration: none;
-}*/
